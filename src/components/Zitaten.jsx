@@ -39,7 +39,7 @@ const Zitaten = () => {
   };
 
   return (
-    <div className="container-fluid bg-success-subtle mt-5 py-5 shadow-lg">
+    <div className="container-fluid bg-success-subtle mt-5 py-md-5 shadow-lg">
       <Swiper {...swiperConfig}>
         {zitaten.map((zitat, i) => (
           <SwiperSlide key={i} className="bg-success-subtle">
