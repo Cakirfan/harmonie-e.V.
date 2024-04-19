@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:wght@100;200;300;500;600;700&family=Kalam:wght@700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Quicksand&family=Roboto:wght@400;500&family=Teko:wght@400;600&family=Ubuntu:wght@300;400;500;700&family=Varela&family=Varela+Round&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.uns {
+  font-family: "Amaranth", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ABeeZee", sans-serif;
+  font-weight: bold;
+  color: orange !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+
+body {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  padding-top: 9rem;
+}
+
+/*! Navbar START */
+.navbar {
+  background-color: #fff;
+}
+
+/* Bu stil, dropdown'ın hover durumunda açılmasını sağlar */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.custom-navbar {
+  z-index: 1040;
+}
+
+/* Bu stil, dropdown menüleri için bazı düzenlemeler yapar */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+/* Bu stil, dropdown içindeki öğelerin arasındaki boşlukları belirler */
+.dropdown-menu li {
+  margin-bottom: 0.125rem;
+}
+
+/* Bu stil, dropdown içindeki öğelerin hover durumunu belirler */
+.dropdown-menu li:hover {
+  background-color: #f8f9fa;
+}
+
+.avatar-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.avatar-img {
+  width: 30px; /* Adjust the size according to your design */
+  height: 30px; /* Adjust the size according to your design */
+  border-radius: 50%;
+}
+
+.avatar-dropdown {
+  position: absolute;
+  top: 40px; /* Adjust the distance from the avatar */
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*! Navbar END */
+
+/*! TopCarousel START */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*! TopCarousel END */
+
+
+/*! Kultur und Kunst START */
+.kultur-praf {
+  font-size: 1.15rem;
+}
+
+.kultur-praf p {
+  text-align: start;
+}
+
+.custom-card {
+  transition: transform 0.3s;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.custom-card:hover {
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
+.custom-card img {
+  transition: transform 0.3s;
+}
+
+.custom-card img:hover {
+  transform: scale(1.05);
+}
+/*! Kultur und Kunst END */
+
+
+.nav-item:hover {
+  color: transparent; /* Hover durumunda metin rengini yeşil yap */
+}
+
+.custom-background {
+  position: relative; /* Pseudo-element için konum referansı */
+  z-index: 1;
+  height: "";
+}
+
+.custom-background::before {
+  content: ""; /* Pseudo-elementi görünür hale getirir */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("https://cdn.pixabay.com/photo/2019/08/18/23/42/flags-4415210_640.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1; /* Opaklığı ayarla */
+  z-index: -1; /* İçerikten arkada olacak */
+}
+
+/* CSS dosyanızda */
+.active-button {
+  background-color: #ffc107; /* Bootstrap bg-warning rengi */
+  color: white; /* Metin rengini belirginleştirmek için */
+}
+
+
+/* Aktif olmayan linkler için şeffaf border */
+.nav-link {
+  border-bottom: 2px solid transparent; /* Sayfanızın arka plan rengine göre ayarlayın */
+  transition: border-color 0.3s; /* Pürüzsüz bir geçiş için */
+}
+
+/* Aktif link için border rengini değiştirin */
+.nav-link.active {
+  border-bottom-color: #007bff; /* Aktif link için border rengi */
+}
+
+
+
+/*! Projekte START */
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 0, 0); /* Başlangıçta görünmez */
+  transition: background-color 0.5s ease;
+}
+
+.card-img-overlay:hover {
+  background-color: rgba(20, 163, 92, 0.85); /* Yeşil arka plan ve opaklık */
+}
+
+.card-img-overlay .text-content {
+  opacity: 0; /* Başlangıçta yazılar görünmez */
+  transition: opacity 0.5s ease;
+}
+
+.card-img-overlay:hover .text-content {
+  opacity: 1; /* Yazılar görünür */
+}
+
+/*! Projekte END */
+
+
+/*! Carousels START */
+/* Sadece sm ekran boyutları ve daha küçükleri için font boyutunu ayarla */
+@media (max-width: 767.98px) {  /* Bootstrap sm breakpoint */
+  .custom-text-size {
+    font-size: 9px !important;
+  }
+}
+
+/* Carousel.Caption genişliğini küçük ekranlarda ayarlama */
+@media (max-width: 576px) {
+  .text-smaller {
+    font-size: 1.1rem !important;
+  }
+}
+
+/*! Carousels END */

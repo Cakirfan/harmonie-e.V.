@@ -1,0 +1,48 @@
+
+.btn-help {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease-in-out;
+}
+
+.btn-help:hover {
+  background: #eee;
+  border-radius: 15px;
+  width: 250px;
+  height: 350px;
+}
+
+.btn-help .i {
+  position: absolute;
+  font-size: 30px;
+  color: #000;
+}
+
+.btn-help:hover .i {
+    opacity: 0;
+}
+
+.text-section {
+    padding: 20px;
+    opacity: 0;
+}
+
+.btn-help:hover .text-section {
+    animation: forwards fadeIn .7s .5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

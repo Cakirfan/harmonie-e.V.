@@ -1,1 +1,1 @@
-# harmonie-e.V.
+# harmonie

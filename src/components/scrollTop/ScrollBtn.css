@@ -1,0 +1,41 @@
+
+.scrollTop {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 800px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    /* background: #fff url(../../assets/images/up.png);
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    color: #06375f !important;
+    background-color: orange;
+    border-radius: 50%;
+    box-shadow: 3px 7px 7px red;
+    border: 3px solid #06375f;
+    cursor: pointer;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.scrollTop .icon {
+    height: 70%;
+    width: 70%;
+    overflow: hidden;
+}
+
+.scrollTop:hover {
+    box-shadow: none;
+}
+
+.scrollTop.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
