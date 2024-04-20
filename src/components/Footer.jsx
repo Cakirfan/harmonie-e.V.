@@ -4,13 +4,43 @@ import {
   FaInfo,
   FaLocationArrow,
   FaPhone,
+  FaEnvelopeOpenText,
+  FaArrowRight,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaHandPointRight
 } from "react-icons/fa";
 import logo from "../assets/img/logo-harmonie.jpeg";
 import { motion } from "framer-motion";
-
+import KontaktModal from "./modals/KontaktModal";
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const sozialIcons = [
+    {
+      href: "/",
+      icon: <FaFacebookF />,
+    },
+    {
+      href: "/",
+      icon: <FaInstagram />,
+    },
+    {
+      href: "/",
+      icon: <FaTwitter />,
+    },
+    {
+      href: "/",
+      icon: <FaLinkedin />,
+    },
+  ];
 
   // Simulate a condition, e.g., footer appears after a user event or conditionally
   useEffect(() => {
@@ -47,9 +77,44 @@ const Footer = () => {
 
   return (
     <>
+      <section className="bg-warning" style={{ marginTop: "5rem" }}>
+        <div className="row py-2">
+          <div className="col text-dark text-end fs-2 mb-3 mt-4 mt-md-2">
+            Kontaktieren Sie uns per{" "}
+            <FaHandPointRight
+              className="fs-1 ms-3"
+              style={{ height: "2rem" }}
+              icon={FaHandPointRight}
+            />
+          </div>
+          <div className="col d-flex">
+            <div className="mt-md-2 py-2">
+              {sozialIcons.map((icon, i) => (
+                <Link key={i} to={icon.href}>
+                  <button
+                    type="button"
+                    className="btn btn-outline-success mx-2 mx-md-2"
+                  >
+                    {icon.icon}
+                  </button>
+                </Link>
+              ))}
+            </div>
+            <div className="mt-md-1 pt-2 fs-4 text-center ms-2">
+              <button
+                type="button"
+                className="btn btn-success rounded-3 border-0 px-3"
+                onClick={handleShow}
+              >
+                <FaEnvelopeOpenText className="fs-5 mb-1 me-2" />
+                <span className="py-2 fs-5">Kontaktformular</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <motion.section
         className="container-fluid bg-success text-white p-5"
-        style={{ marginTop: "5rem" }}
         variants={containerVariants}
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
@@ -111,6 +176,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      <KontaktModal show={show} handleClose={handleClose} />
     </>
   );
 };
