@@ -17,7 +17,7 @@ const Impressum = () => {
           </p>
         </div>{" "}
         <div className="mb-4 lh-sm mb-5">
-          <p className="text-secondary">Telefon: 0111 / 111 111 11</p>
+          <p className="text-secondary">Telefon: +49 15566 051266</p>
           <p className="text-secondary">EMail: info@harmonieneuss.de</p>
         </div>
         <div className="mb-5 lh-sm">
@@ -34,7 +34,7 @@ const Impressum = () => {
           <p className="mb-2 text-secondary">
             E-Mail-Adresse: info@harmonieneuss.de{" "}
           </p>
-          <p className="mb-2 text-secondary">Telefon: 0111 / 111 111 11</p>
+          <p className="mb-2 text-secondary">Telefon: +49 15566 051266</p>
         </div>
       </div>
 

@@ -64,7 +64,7 @@ const ContactBar = () => {
             <span>
               <FaPhone />
             </span>
-            <span className="text-danger">0111 / 999 999 99</span>
+            <span className="text-danger">+49 15566 051266</span>
           </div>
           <span className="ms-3 fs-6">|</span>
           <div className="ms-3 d-flex gap-2 fs-6">

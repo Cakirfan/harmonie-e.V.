@@ -65,7 +65,7 @@ const ContactInfo = () => (
       <span className="fw-semibold">E-mail: </span>info@harmonieneuss.de
     </p>
     <p>
-      <span className="fw-semibold">Telefon: </span>+49 123 456 789
+      <span className="fw-semibold">Telefon: </span>+49 15566 051266
     </p>
   </section>
 );

@@ -78,7 +78,7 @@ const Footer = () => {
                 <FaPhone />
               </span>
               <h1 className="text-white">KONTAKT</h1>
-              <span className="fs-5">Tel: 0111 / 111 111 11</span>
+              <span className="fs-5">Tel: +49 15566 051266</span>
               <span className="fs-5">EMail: info@harmonieneuss.de</span>
             </motion.div>
             <motion.div
