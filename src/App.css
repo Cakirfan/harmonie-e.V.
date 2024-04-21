@@ -227,6 +227,19 @@ body {
   overflow: hidden;
 }
 
+.project-card {
+  overflow: hidden; /* Kartın dışına taşmayı önler */
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 3px, rgba(240, 46, 72, 0.3) 0px 5px, rgba(240, 46, 72, 0.2) 0px 7px, rgba(240, 46, 78, 0.1) 0px 9px, rgba(240, 46, 78, 0.05) 0px 12px;
+}
+
+.project-card .card-img-top {
+  transition: transform 0.3s ease-in-out; /* Her durum için animasyonu etkinleştirir */
+}
+
+.project-card:hover .card-img-top {
+  transform: scale(1.1); /* Resmi büyüt */
+}
+
 .card.project-card .card-img-overlay {
   position: absolute;
   top: 0;
@@ -245,6 +258,13 @@ body {
 
 .card.project-card:hover .card-img-overlay {
   opacity: 1;
+}
+
+
+@media (max-width: 576px) { /* Bootstrap sm breakpoint altı için */
+  .img-standard {
+    height: 200px !important; /* Tüm kartların resim yüksekliklerini 200px yapar */
+  }
 }
 
 /*! Projekte END */

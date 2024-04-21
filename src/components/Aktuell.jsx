@@ -38,10 +38,10 @@ const Aktuell = () => {
           viewport={{ once: true, amount: 0.5 }}
         >
           <motion.div className="col-md-9 d-flex flex-column flex-md-row g-4 mx-auto">
-            <div className="col-12 col-md-5 mb-3 mb-md-0">
+            <div className="col-12 col-md-5 mb-3 mb-md-0 aktuell-card">
               <img
                 src="https://cdn.pixabay.com/photo/2023/10/25/19/25/blue-8341156_640.jpg"
-                className="img-fluid rounded border border-5 border-dark shadow-lg"
+                className="img-fluid rounded border border-5 border-dark shadow-lg aktuell-img"
                 alt="..."
               />
             </div>
