@@ -203,32 +203,48 @@ body {
 }
 
 /*! Projekte START */
-.card-img-wrapper {
+
+.shadow-text {
+    position: relative; /* Pseudo-element için konumlandırma gerekiyor */
+    color: black; /* Metin rengi */
+}
+
+.shadow-text::after {
+    content: ""; /* Pseudo-element için içerik, boş olacak */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px; /* Metin altından itibaren mesafe */
+    height: 5px; /* Çizgi kalınlığı */
+    width: 5rem;
+    margin: auto;
+    background: rgba(255, 0, 0, 0.8); /* Çizgi rengi, daha az saydam kırmızı */
+    box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5); /* Altında gölge efekti */
+}
+
+.card.project-card {
   position: relative;
   overflow: hidden;
 }
 
-.card-img-overlay {
+.card.project-card .card-img-overlay {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-color: rgba(0, 255, 0, 0); /* Başlangıçta görünmez */
-  transition: background-color 0.5s ease;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-img-overlay:hover {
-  background-color: rgba(20, 163, 92, 0.85); /* Yeşil arka plan ve opaklık */
-}
-
-.card-img-overlay .text-content {
-  opacity: 0; /* Başlangıçta yazılar görünmez */
-  transition: opacity 0.5s ease;
-}
-
-.card-img-overlay:hover .text-content {
-  opacity: 1; /* Yazılar görünür */
+.card.project-card:hover .card-img-overlay {
+  opacity: 1;
 }
 
 /*! Projekte END */

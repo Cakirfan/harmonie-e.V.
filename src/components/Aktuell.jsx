@@ -27,7 +27,7 @@ const Aktuell = () => {
 
   return (
     <div className="container-fluid bg-body-tertiary py-5 border-bottom border-3 border-top border-success">
-      <h1 className="text-center text-dark mb-5">Aktuelles</h1>
+      <h1 className="text-center text-dark mb-5 shadow-text">Aktuelles</h1>
       {aktuelInfo.map((info, i) => (
         <motion.div
           className="row my-5"
