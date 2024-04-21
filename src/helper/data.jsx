@@ -516,7 +516,7 @@ const hauptInfo = [
       "/images/jugend/jFoto-12.jpg",
     ],
     time: "...",
-  }
+  },
 ];
 
 const jugendData = [
@@ -927,6 +927,73 @@ const zitaten = [
   },
 ];
 
+const projekte = [
+  {
+    name: "",
+    titel: "Projekt Titel 1",
+    desc: "Hier kommt eine kurze Beschreibung des bezüglichen Projektes",
+    desc2: "",
+    image:
+      "https://cdn.pixabay.com/photo/2017/01/17/15/24/network-1987209_640.jpg",
+  },
+  {
+    name: "",
+    titel: "Projekt Titel 2",
+    desc: "Hier kommt eine kurze Beschreibung des bezüglichen Projektes",
+    desc2: "",
+    image:
+      "https://cdn.pixabay.com/photo/2018/01/26/09/06/people-3108155_640.jpg",
+  },
+  {
+    name: "",
+    titel: "Projekt Titel 3",
+    desc: "Hier kommt eine kurze Beschreibung des bezüglichen Projektes",
+    desc2: "",
+    image:
+      "https://cdn.pixabay.com/photo/2017/08/29/08/39/industry-2692459_640.jpg",
+  },
+  {
+    name: "",
+    titel: "Projekt Titel 4",
+    desc: "Hier kommt eine kurze Beschreibung des bezüglichen Projektes",
+    desc2: "",
+    image:
+      "https://cdn.pixabay.com/photo/2018/02/02/17/14/triangle-3125882_640.jpg",
+  },
+  {
+    name: "",
+    titel: "Projekt Titel 5",
+    desc: "Hier kommt eine kurze Beschreibung des bezüglichen Projektes",
+    desc2: "",
+    image:
+      "https://cdn.pixabay.com/photo/2015/09/09/20/40/drawing-933207_640.jpg",
+  },
+  {
+    name: "",
+    titel: "Projekt Titel 6",
+    desc: "Hier kommt eine kurze Beschreibung des bezüglichen Projektes",
+    desc2: "",
+    image:
+      "https://cdn.pixabay.com/photo/2021/05/19/06/13/smartphone-6265046_640.jpg",
+  },
+  {
+    name: "",
+    titel: "Projekt Titel 7",
+    desc: "Hier kommt eine kurze Beschreibung des bezüglichen Projektes",
+    desc2: "",
+    image:
+      "https://cdn.pixabay.com/photo/2016/12/02/02/10/idea-1876659_640.jpg",
+  },
+  {
+    name: "",
+    titel: "Projekt Titel 8",
+    desc: "Hier kommt eine kurze Beschreibung des bezüglichen Projektes",
+    desc2: "",
+    image:
+      "https://cdn.pixabay.com/photo/2017/06/04/20/48/implement-2372179_640.jpg",
+  },
+];
+
 export {
   newss,
   kulturData,
@@ -936,4 +1003,5 @@ export {
   hauptInfo,
   allInfo,
   zitaten,
+  projekte,
 };

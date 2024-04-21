@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import {projekte} from "../helper/data"
 
 const Projekte = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,22 +28,13 @@ const Projekte = () => {
     },
   };
 
-  const images = [
-    "https://cdn.pixabay.com/photo/2017/01/17/15/24/network-1987209_640.jpg",
-    "https://cdn.pixabay.com/photo/2018/01/26/09/06/people-3108155_640.jpg",
-    "https://cdn.pixabay.com/photo/2017/08/29/08/39/industry-2692459_640.jpg",
-    "https://cdn.pixabay.com/photo/2018/02/02/17/14/triangle-3125882_640.jpg",
-    "https://cdn.pixabay.com/photo/2015/09/09/20/40/drawing-933207_640.jpg",
-    "https://cdn.pixabay.com/photo/2021/05/19/06/13/smartphone-6265046_640.jpg",
-    "https://cdn.pixabay.com/photo/2016/12/02/02/10/idea-1876659_640.jpg",
-    "https://cdn.pixabay.com/photo/2017/06/04/20/48/implement-2372179_640.jpg",
-  ];
 
-  const leftImages = images.slice(0, 3); // İlk 3 resim
-  const rightImages = images.slice(5); // Son 3 resim
+  const leftInfo = projekte.slice(0, 3); // İlk 3 resim
+  const rightInfo = projekte.slice(5); // Son 3 resim
 
   return (
-    <div className="container-fluid bg-body-tertiary py-5 mb-5 border-bottom border-3 border-success shadow-lg">
+    <div
+      className="container-fluid py-5 mb-5 border-bottom border-3 border-success shadow-lg">
       <div className="text-center mb-5">
         <h1 className=" text-dark shadow-text">Projekte</h1>
       </div>
@@ -52,7 +44,7 @@ const Projekte = () => {
           <div className="row">
             {/* Left Column */}
             <div className="col-lg-3">
-              {leftImages.map((image, index) => (
+              {leftInfo.map((info, index) => (
                 <motion.div
                   key={index}
                   variants={containerVariants}
@@ -62,14 +54,14 @@ const Projekte = () => {
                 >
                   <div className="card project-card mb-4">
                     <img
-                      src={image}
+                      src={info.image}
                       alt={`Foto ${index + 1}`}
                       className="card-img-top"
                       height={200}
                     />
-                    <div className="card-img-overlay">
-                      <h3 className="card-title">Başlık {index + 1}</h3>
-                      <p className="card-text">Detaylar burada yer alacak.</p>
+                    <div className="card-img-overlay text-center">
+                      <h3 className="card-title">{info.titel}</h3>
+                      <p className="card-text">{info.desc}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -86,14 +78,14 @@ const Projekte = () => {
               >
                 <div className="card project-card mb-4">
                   <img
-                    src={images[3]}
+                    src={projekte[3].image}
                     alt="Foto 4"
-                    className="card-img-top"
+                    className="card-img-top img-standard"
                     height={650}
                   />
-                  <div className="card-img-overlay">
-                    <h3 className="card-title">Başlık 4</h3>
-                    <p className="card-text">Detaylar burada yer alacak.</p>
+                  <div className="card-img-overlay text-center">
+                    <h3 className="card-title">{projekte[3].titel}</h3>
+                    <p className="card-text">{projekte[3].desc}</p>
                   </div>
                 </div>
               </motion.div>
@@ -101,7 +93,7 @@ const Projekte = () => {
 
             {/* Right Column */}
             <div className="col-lg-3">
-              {rightImages.map((image, index) => (
+              {rightInfo.map((info, index) => (
                 <motion.div
                   key={index}
                   variants={containerVariants}
@@ -111,14 +103,14 @@ const Projekte = () => {
                 >
                   <div className="card project-card mb-4">
                     <img
-                      src={image}
+                      src={info.image}
                       alt={`Foto ${index + 1}`}
                       className="card-img-top"
                       height={200}
                     />
-                    <div className="card-img-overlay">
-                      <h3 className="card-title">Başlık {index + 1}</h3>
-                      <p className="card-text">Detaylar burada yer alacak.</p>
+                    <div className="card-img-overlay text-center">
+                      <h3 className="card-title">{info.titel}</h3>
+                      <p className="card-text">{info.desc}</p>
                     </div>
                   </div>
                 </motion.div>
