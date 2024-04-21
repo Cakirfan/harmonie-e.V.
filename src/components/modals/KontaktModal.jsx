@@ -43,8 +43,8 @@ function KontaktModal({ show, handleClose }) {
       console.log(formData);
       setFormData({
         geschlecht: "",
-        name: "",
         vorname: "",
+        nachname: "",
         strasse: "",
         wohnort: "",
         tel: "",
@@ -99,22 +99,22 @@ function KontaktModal({ show, handleClose }) {
                 <Form.Group className="mb-3" controlId="formFirstName">
                   <Form.Control
                     type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
+                    id="vorname"
+                    name="vorname"
+                    value={formData.vorname}
                     onChange={handleChange}
-                    placeholder="Name"
+                    placeholder="Vorname"
                     required
                   />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formNachName">
                   <Form.Control
                     type="text"
-                    id="vorname"
-                    name="vorname"
-                    value={formData.vorname}
+                    id="nachname"
+                    name="nachname"
+                    value={formData.nachname}
                     onChange={handleChange}
-                    placeholder="Vorname"
+                    placeholder="Nachname"
                     required
                   />
                 </Form.Group>

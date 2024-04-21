@@ -29,7 +29,6 @@ li:hover {
   text-decoration: underline;
 }
 
-
 body {
   position: relative;
   height: 100%;
@@ -133,7 +132,6 @@ body {
 }
 /*! TopCarousel END */
 
-
 /*! Kultur und Kunst START */
 .kultur-praf {
   font-size: 1.15rem;
@@ -161,7 +159,6 @@ body {
   transform: scale(1.05);
 }
 /*! Kultur und Kunst END */
-
 
 .nav-item:hover {
   color: transparent; /* Hover durumunda metin rengini yeşil yap */
@@ -194,7 +191,6 @@ body {
   color: white; /* Metin rengini belirginleştirmek için */
 }
 
-
 /* Aktif olmayan linkler için şeffaf border */
 .nav-link {
   border-bottom: 2px solid transparent; /* Sayfanızın arka plan rengine göre ayarlayın */
@@ -205,8 +201,6 @@ body {
 .nav-link.active {
   border-bottom-color: #007bff; /* Aktif link için border rengi */
 }
-
-
 
 /*! Projekte START */
 .card-img-wrapper {
@@ -239,10 +233,10 @@ body {
 
 /*! Projekte END */
 
-
 /*! Carousels START */
 /* Sadece sm ekran boyutları ve daha küçükleri için font boyutunu ayarla */
-@media (max-width: 767.98px) {  /* Bootstrap sm breakpoint */
+@media (max-width: 767.98px) {
+  /* Bootstrap sm breakpoint */
   .custom-text-size {
     font-size: 9px !important;
   }
@@ -256,3 +250,23 @@ body {
 }
 
 /*! Carousels END */
+
+/*! Mitgliedschaft START */
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printArea,
+  #printArea * {
+    visibility: visible;
+  }
+  #printArea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+/*! Mitgliedschaft END */
