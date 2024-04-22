@@ -294,8 +294,10 @@ const hauptInfo = [
     type: "newss",
     titel: "Titel über aktuelle Daten (1)",
     desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
+    desc2:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae. Blanditiis, explicabo! Sit nihil dolor ipsam error totam nam magnam iure consectetur placeat. Culpa corporis laudantium cumque quis repellat! Sed delectus voluptatibus dicta, magni odio dignissimos necessitatibus pariatur rerum hic, nesciunt repellendus incidunt quibusdam sit. Quis voluptatum rem, consectetur, exercitationem suscipit, vitae fugiat quia illum incidunt praesentium voluptas sed id! Iste, doloremque nulla. Pariatur eaque commodi odio corrupti labore ipsam sit nihil, consequatur fugiat exercitationem aut eos dolorum sequi asperiores dicta ipsum officia sed voluptas, veritatis sunt. Sapiente suscipit vel, dignissimos aperiam aspernatur ab. Sunt, repudiandae maxime. Illo, nostrum.",
     image:
-      "https://cdn.pixabay.com/photo/2018/04/04/15/34/shelf-3290109_640.jpg",
+      "https://cdn.pixabay.com/photo/2023/10/25/19/25/blue-8341156_640.jpg",
     video: "",
     images: [
       "/images/news/nFoto-1.jpg",
@@ -318,8 +320,10 @@ const hauptInfo = [
     type: "newss",
     titel: "Titel über aktuelle Daten (2)",
     desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
+    desc2:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae. Blanditiis, explicabo! Sit nihil dolor ipsam error totam nam magnam iure consectetur placeat. Culpa corporis laudantium cumque quis repellat! Sed delectus voluptatibus dicta, magni odio dignissimos necessitatibus pariatur rerum hic, nesciunt repellendus incidunt quibusdam sit. Quis voluptatum rem, consectetur, exercitationem suscipit, vitae fugiat quia illum incidunt praesentium voluptas sed id! Iste, doloremque nulla. Pariatur eaque commodi odio corrupti labore ipsam sit nihil, consequatur fugiat exercitationem aut eos dolorum sequi asperiores dicta ipsum officia sed voluptas, veritatis sunt. Sapiente suscipit vel, dignissimos aperiam aspernatur ab. Sunt, repudiandae maxime. Illo, nostrum.",
     image:
-      "https://cdn.pixabay.com/photo/2018/04/04/15/34/shelf-3290109_640.jpg",
+      "https://cdn.pixabay.com/animation/2023/03/28/02/15/02-15-52-868_512.gif",
     video: "",
     images: [
       "/images/news/nFoto-7.jpg",
@@ -336,8 +340,10 @@ const hauptInfo = [
     type: "newss",
     titel: "Titel über aktuelle Daten (3)",
     desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
+    desc2:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae. Blanditiis, explicabo! Sit nihil dolor ipsam error totam nam magnam iure consectetur placeat. Culpa corporis laudantium cumque quis repellat! Sed delectus voluptatibus dicta, magni odio dignissimos necessitatibus pariatur rerum hic, nesciunt repellendus incidunt quibusdam sit. Quis voluptatum rem, consectetur, exercitationem suscipit, vitae fugiat quia illum incidunt praesentium voluptas sed id! Iste, doloremque nulla. Pariatur eaque commodi odio corrupti labore ipsam sit nihil, consequatur fugiat exercitationem aut eos dolorum sequi asperiores dicta ipsum officia sed voluptas, veritatis sunt. Sapiente suscipit vel, dignissimos aperiam aspernatur ab. Sunt, repudiandae maxime. Illo, nostrum.",
     image:
-      "https://cdn.pixabay.com/photo/2018/04/04/15/34/shelf-3290109_640.jpg",
+      "https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-41-513_512.gif",
     video: "",
     images: [
       "/images/news/nFoto-7.jpg",
@@ -1016,8 +1022,9 @@ const projekte = [
     image:
       "https://cdn.pixabay.com/photo/2018/02/02/17/14/triangle-3125882_640.jpg",
     video:
-      "https://cdn.pixabay.com/animation/2024/03/31/05/13/05-13-13-202_512.gif",
+      "",
     images: [
+      "https://cdn.pixabay.com/animation/2023/08/17/08/51/08-51-41-992_512.gif",
       "https://cdn.pixabay.com/photo/2013/07/12/18/36/agenda-153555_640.png",
       "https://cdn.pixabay.com/photo/2021/08/19/14/00/field-6558125_640.jpg",
       "https://cdn.pixabay.com/photo/2021/04/06/19/20/balance-6157258_640.jpg",

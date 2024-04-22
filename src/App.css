@@ -202,24 +202,32 @@ body {
   border-bottom-color: #007bff; /* Aktif link için border rengi */
 }
 
+/*? Home START */
+/*! Aktuell START */
+.icon-link-hover:hover .icon {
+  margin-left: 0.5rem; /* örneğin 8px olarak ayarlandı */
+  transition: all 0.3s ease-in-out;
+}
+/*! Aktuell END */
+
 /*! Projekte START */
 
 .shadow-text {
-    position: relative; /* Pseudo-element için konumlandırma gerekiyor */
-    color: black; /* Metin rengi */
+  position: relative; /* Pseudo-element için konumlandırma gerekiyor */
+  color: black; /* Metin rengi */
 }
 
 .shadow-text::after {
-    content: ""; /* Pseudo-element için içerik, boş olacak */
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -10px; /* Metin altından itibaren mesafe */
-    height: 5px; /* Çizgi kalınlığı */
-    width: 5rem;
-    margin: auto;
-    background: rgba(255, 0, 0, 0.8); /* Çizgi rengi, daha az saydam kırmızı */
-    box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5); /* Altında gölge efekti */
+  content: ""; /* Pseudo-element için içerik, boş olacak */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px; /* Metin altından itibaren mesafe */
+  height: 5px; /* Çizgi kalınlığı */
+  width: 5rem;
+  margin: auto;
+  background: rgba(255, 0, 0, 0.8); /* Çizgi rengi, daha az saydam kırmızı */
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5); /* Altında gölge efekti */
 }
 
 .card.project-card {
@@ -229,7 +237,9 @@ body {
 
 .project-card {
   overflow: hidden; /* Kartın dışına taşmayı önler */
-  box-shadow: rgba(240, 46, 170, 0.4) 0px 3px, rgba(240, 46, 72, 0.3) 0px 5px, rgba(240, 46, 72, 0.2) 0px 7px, rgba(240, 46, 78, 0.1) 0px 9px, rgba(240, 46, 78, 0.05) 0px 12px;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 3px, rgba(240, 46, 72, 0.3) 0px 5px,
+    rgba(240, 46, 72, 0.2) 0px 7px, rgba(240, 46, 78, 0.1) 0px 9px,
+    rgba(240, 46, 78, 0.05) 0px 12px;
 }
 
 .project-card .card-img-top {
@@ -260,14 +270,15 @@ body {
   opacity: 1;
 }
 
-
-@media (max-width: 576px) { /* Bootstrap sm breakpoint altı için */
+@media (max-width: 576px) {
+  /* Bootstrap sm breakpoint altı için */
   .img-standard {
     height: 200px !important; /* Tüm kartların resim yüksekliklerini 200px yapar */
   }
 }
 
 /*! Projekte END */
+/*? Home END */
 
 /*! Carousels START */
 /* Sadece sm ekran boyutları ve daha küçükleri için font boyutunu ayarla */
@@ -309,11 +320,10 @@ body {
 
 /*! Mitgliedschaft START */
 
-@media (max-width: 576px) { /* SM breakpoint */
-  .a .b .c {
-    font-size: 0.3rem !important;
-  }
-  .btn-sm { /* Daha küçük butonlar */
+@media (max-width: 576px) {
+  /* SM breakpoint */
+  .btn-sm {
+    /* Daha küçük butonlar */
     padding: 0.25rem 0.5rem;
     font-size: 0.675rem;
   }

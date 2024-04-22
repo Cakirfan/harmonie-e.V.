@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { hauptInfo } from "../helper/data";
+import { Link } from "react-router-dom";
 
 const Aktuell = () => {
   const [aktuelInfo, setAktuelInfo] = useState([]);
@@ -40,8 +41,8 @@ const Aktuell = () => {
           <motion.div className="col-md-9 d-flex flex-column flex-md-row g-4 mx-auto">
             <div className="col-12 col-md-5 mb-3 mb-md-0 aktuell-card">
               <img
-                src="https://cdn.pixabay.com/photo/2023/10/25/19/25/blue-8341156_640.jpg"
-                className="img-fluid rounded border border-5 border-dark shadow-lg aktuell-img"
+                src={info.image}
+                className="img-fluid rounded border border-5 border-dark shadow-lg aktuell-img w-100"
                 alt="..."
               />
             </div>
@@ -63,9 +64,14 @@ const Aktuell = () => {
                     Last updated 3 mins ago
                   </small>
                 </p>
-                <span className="fs-5">
-                  Mehr <BsArrowRightSquareFill className="fs-5" />
-                </span>
+                <Link
+                  to={`/aktuell/${info.id}`}
+                  className="custom-link text-decoration-none"
+                >
+                  <span className="fs-5 icon-link-hover">
+                    Mehr <BsArrowRightSquareFill className="fs-5 icon" />
+                  </span>
+                </Link>
               </div>
             </div>
           </motion.div>
