@@ -149,7 +149,7 @@ const Footer = () => {
                   </Link>
                 ))}
               </div>
-              <div className="fs-4 text-center ms-md-2 mt-1">
+              <div className="fs-4 text-center ms-md-5 mt-1">
                 <button
                   type="button"
                   className="btn btn-sm btn-success rounded-3 border-0 px-3"
