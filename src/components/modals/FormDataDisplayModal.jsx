@@ -120,7 +120,7 @@ const FormDataDisplayModal = ({ show, handleClose, data }) => {
               <td>{data.strasse}</td>
             </tr>
             <tr>
-              <th>Ort</th>
+              <th>PLZ/Wohnort</th>
               <td>{data.wohnort}</td>
             </tr>
             <tr>

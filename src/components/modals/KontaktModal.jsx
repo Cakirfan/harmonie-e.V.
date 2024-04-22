@@ -166,12 +166,16 @@ function KontaktModal({ show, handleClose }) {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBirthdate">
+                  <Form.Label className="text-secondary" htmlFor="geburtsdatum">
+                    Geburtsdatum
+                  </Form.Label>
                   <Form.Control
                     type="date"
                     id="geburtsdatum"
                     name="geburtsdatum"
                     value={formData.geburtsdatum}
                     onChange={handleChange}
+                    placeholder="Geburtsdatum"
                     required
                   />
                 </Form.Group>
