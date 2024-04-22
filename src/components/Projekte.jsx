@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import {projekte} from "../helper/data"
+import { projekte } from "../helper/data";
+import { Link } from "react-router-dom";
 
 const Projekte = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,13 +29,11 @@ const Projekte = () => {
     },
   };
 
-
   const leftInfo = projekte.slice(0, 3); // İlk 3 resim
   const rightInfo = projekte.slice(5); // Son 3 resim
 
   return (
-    <div
-      className="container-fluid py-5 mb-5 border-bottom border-3 border-success shadow-lg">
+    <div className="container-fluid py-5 mb-5 border-bottom border-3 border-success shadow-lg">
       <div className="text-center mb-5">
         <h1 className=" text-dark shadow-text">Projekte</h1>
       </div>
@@ -52,18 +51,23 @@ const Projekte = () => {
                   whileInView={isVisible ? "visible" : "hidden"}
                   viewport={{ once: true, amount: 0.5 }}
                 >
-                  <div className="card project-card mb-4">
-                    <img
-                      src={info.image}
-                      alt={`Foto ${index + 1}`}
-                      className="card-img-top"
-                      height={200}
-                    />
-                    <div className="card-img-overlay text-center">
-                      <h3 className="card-title">{info.titel}</h3>
-                      <p className="card-text">{info.desc}</p>
+                  <Link
+                    to={`/projekt/${info.id}`}
+                    className="custom-link text-decoration-none"
+                  >
+                    <div className="card project-card mb-4">
+                      <img
+                        src={info.image}
+                        alt={`Foto ${index + 1}`}
+                        className="card-img-top"
+                        height={200}
+                      />
+                      <div className="card-img-overlay text-center">
+                        <h3 className="card-title">{info.titel}</h3>
+                        <p className="card-text">{info.desc}</p>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </motion.div>
               ))}
             </div>
@@ -76,18 +80,23 @@ const Projekte = () => {
                 whileInView={isVisible ? "visible" : "hidden"}
                 viewport={{ once: true, amount: 0.5 }}
               >
-                <div className="card project-card mb-4">
-                  <img
-                    src={projekte[3].image}
-                    alt="Foto 4"
-                    className="card-img-top img-standard"
-                    height={650}
-                  />
-                  <div className="card-img-overlay text-center">
-                    <h3 className="card-title">{projekte[3].titel}</h3>
-                    <p className="card-text">{projekte[3].desc}</p>
+                <Link
+                  to={`/projekt/${projekte[3].id}`}
+                  className="custom-link text-decoration-none"
+                >
+                  <div className="card project-card mb-4">
+                    <img
+                      src={projekte[3].image}
+                      alt="Foto 4"
+                      className="card-img-top img-standard"
+                      height={650}
+                    />
+                    <div className="card-img-overlay text-center">
+                      <h3 className="card-title">{projekte[3].titel}</h3>
+                      <p className="card-text">{projekte[3].desc}</p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </motion.div>
             </div>
 
@@ -101,18 +110,23 @@ const Projekte = () => {
                   whileInView={isVisible ? "visible" : "hidden"}
                   viewport={{ once: true, amount: 0.5 }}
                 >
-                  <div className="card project-card mb-4">
-                    <img
-                      src={info.image}
-                      alt={`Foto ${index + 1}`}
-                      className="card-img-top"
-                      height={200}
-                    />
-                    <div className="card-img-overlay text-center">
-                      <h3 className="card-title">{info.titel}</h3>
-                      <p className="card-text">{info.desc}</p>
+                  <Link
+                    to={`/projekt/${info.id}`}
+                    className="custom-link text-decoration-none"
+                  >
+                    <div className="card project-card mb-4">
+                      <img
+                        src={info.image}
+                        alt={`Foto ${index + 1}`}
+                        className="card-img-top"
+                        height={200}
+                      />
+                      <div className="card-img-overlay text-center">
+                        <h3 className="card-title">{info.titel}</h3>
+                        <p className="card-text">{info.desc}</p>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </motion.div>
               ))}
             </div>

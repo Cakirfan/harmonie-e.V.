@@ -25,7 +25,7 @@ const AllInfoDetails = () => {
   
 
   return (
-    <div className="container-fluid d-flex flex-wrap align-items-center my-5">
+    <div className="d-flex flex-column align-items-center my-5">
       <div className="row">
         <div className="col col-md-8 mx-auto">
           <UpperSection
@@ -35,7 +35,7 @@ const AllInfoDetails = () => {
           />
         </div>
       </div>
-      <div className="col col-md-10 mx-auto">
+      <div className="col col-md-12 mx-auto">
         <FotoSwiper
           images={categoryDetails ? categoryDetails.images : []}
           handleShow={handleShow}

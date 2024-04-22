@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { hauptInfo } from "../../helper/data";
+import { projekte } from "../../helper/data";
 import UpperSection from "../../components/UpperSection";
 import FotoSwiper from "../../components/FotoSwiper";
+import { useParams } from "react-router-dom";
 
-const DialogDetail = () => {
-
+const ProjektDetail = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const { id } = useParams(); // Grab the category ID from the URL
   const [categoryDetails, setCategoryDetails] = useState(null);
@@ -13,16 +12,24 @@ const DialogDetail = () => {
   const [modalShow, setModalShow] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
 
-  useEffect(() => {
-    const details = hauptInfo.find((info) => info.id.toString() === id);
-    setCategoryDetails(details);
-    console.log(categoryDetails);
-  }, [id]);
+ useEffect(() => {
+   const details = projekte.find((info) => info.id.toString() === id);
+   if (details) {
+     setCategoryDetails(details);
+     console.log(details); // Log the fetched details directly
+   } else {
+     console.log("No details found for id:", id);
+   }
+ }, [id]);
 
-  const handleShow = (imgSrc) => {
-    setSelectedImage(imgSrc);
-    setModalShow(true);
-  };
+ if (!categoryDetails) {
+   return <div>Loading...</div>; // Or some error message
+ }
+
+   const handleShow = (imgSrc) => {
+     setSelectedImage(imgSrc);
+     setModalShow(true);
+   };
 
   return (
     <div className="d-flex flex-column align-items-center my-5">
@@ -48,4 +55,4 @@ const DialogDetail = () => {
   );
 };
 
-export default DialogDetail;
+export default ProjektDetail;

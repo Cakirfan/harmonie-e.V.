@@ -35,7 +35,7 @@ const BildungDetail = () => {
           />
         </div>
       </div>
-      <div className="col col-md-10 mx-auto">
+      <div className="col col-md-12 mx-auto">
         <FotoSwiper
           images={categoryDetails ? categoryDetails.images : []}
           handleShow={handleShow}

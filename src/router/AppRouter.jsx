@@ -21,9 +21,9 @@ import DialogDetail from "../pages/details/DialogDetail";
 import BildungDetail from "../pages/details/BildungDetail";
 import MigrationsDetail from "../pages/details/MigrationsDetail";
 import AllInfoDetails from "../pages/details/AllInfoDetails";
+import ProjektDetail from "../pages/details/ProjektDetail";
 
 const AppRouter = () => {
-
   return (
     <BrowserRouter>
       <Navbar />
@@ -46,6 +46,7 @@ const AppRouter = () => {
         <Route path="dialog/:id" element={<DialogDetail />} />
         <Route path="bildung/:id" element={<BildungDetail />} />
         <Route path="migration/:id" element={<MigrationsDetail />} />
+        <Route path="projekt/:id" element={<ProjektDetail />} />
         <Route path="/detail/:categoryId" element={<AllInfoDetails />} />
       </Routes>
       <Mitmachen />
