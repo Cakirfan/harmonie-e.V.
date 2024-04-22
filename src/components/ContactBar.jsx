@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaPhone,
   FaTwitter,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -26,9 +27,13 @@ const ContactBar = () => {
       href: "https://www.instagram.com",
       icon: <FaInstagram />,
     },
+    {
+      name: "whatsapp",
+      href: "https://wa.me/4915566051266",
+      icon: <FaWhatsapp />,
+    },
   ];
 
-  // Animasyon için varyantlar
   const containerVariants = {
     hidden: { opacity: 0, x: -100 },
     visible: {
@@ -36,7 +41,7 @@ const ContactBar = () => {
       x: 0,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.7, // Çocuk animasyonları arasındaki gecikme
+        staggerChildren: 0.7,
       },
     },
   };
@@ -58,7 +63,6 @@ const ContactBar = () => {
       animate="visible"
     >
       <div className="col col-8 d-flex justify-content-between mx-auto">
-        {/* Telefon ve E-mail animasyonları */}
         <motion.div className="d-flex me-5" variants={itemVariants}>
           <div className="ms-3 d-flex gap-2 fs-6">
             <span>
@@ -71,11 +75,11 @@ const ContactBar = () => {
             <span>
               <FaEnvelope />
             </span>
-            <span className="text-danger">info@harmonieneuss.de</span>
+            <a href="mailto:info@harmonieneuss.de" className="text-danger">
+              info@harmonieneuss.de
+            </a>
           </div>
         </motion.div>
-
-        {/* Sosyal medya linkleri için animasyon */}
         <motion.div className="d-flex gap-3 ms-5 fs-6" variants={itemVariants}>
           {socialMedia.map((item, i) => (
             <Link
