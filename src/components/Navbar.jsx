@@ -86,8 +86,8 @@ const Navbar = ({ setSelectedMenuItem }) => {
               duration: 2,
               ease: "easeInOut",
               times: [0, 0.2, 0.5, 0.8, 1],
-              repeat: 1,
-              repeatDelay: 1,
+              repeat: 0,
+              repeatDelay: 0,
             }}
           >
             <NavLink className="navbar-brand" to="/" onClick={closeNavbar}>
