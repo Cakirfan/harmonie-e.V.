@@ -42,69 +42,56 @@ body {
 }
 
 /*! Navbar START */
-.navbar {
-  background-color: #fff;
+
+.nav-item:hover {
+  color: transparent; /* Hover durumunda metin rengini yeşil yap */
 }
 
-/* Bu stil, dropdown'ın hover durumunda açılmasını sağlar */
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
+.custom-background {
+  position: relative; /* Pseudo-element için konum referansı */
+  z-index: 1;
+  height: "";
 }
 
-.custom-navbar {
-  z-index: 1040;
-}
-
-/* Bu stil, dropdown menüleri için bazı düzenlemeler yapar */
-.dropdown-menu {
+.custom-background::before {
+  content: ""; /* Pseudo-elementi görünür hale getirir */
   position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-  float: left;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
-}
-
-/* Bu stil, dropdown içindeki öğelerin arasındaki boşlukları belirler */
-.dropdown-menu li {
-  margin-bottom: 0.125rem;
-}
-
-/* Bu stil, dropdown içindeki öğelerin hover durumunu belirler */
-.dropdown-menu li:hover {
-  background-color: #f8f9fa;
-}
-
-.avatar-container {
-  position: relative;
-  cursor: pointer;
-}
-
-.avatar-img {
-  width: 30px; /* Adjust the size according to your design */
-  height: 30px; /* Adjust the size according to your design */
-  border-radius: 50%;
-}
-
-.avatar-dropdown {
-  position: absolute;
-  top: 40px; /* Adjust the distance from the avatar */
+  top: 0;
   right: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  background-image: url("https://cdn.pixabay.com/photo/2019/08/18/23/42/flags-4415210_640.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1; /* Opaklığı ayarla */
+  z-index: -1; /* İçerikten arkada olacak */
 }
+
+/* CSS dosyanızda */
+.active-button {
+  background-color: #ffc107; /* Bootstrap bg-warning rengi */
+  color: white; /* Metin rengini belirginleştirmek için */
+}
+
+/* Aktif olmayan linkler için şeffaf border */
+.nav-link {
+  border-bottom: 2px solid transparent; /* Sayfanızın arka plan rengine göre ayarlayın */
+  transition: border-color 0.3s; /* Pürüzsüz bir geçiş için */
+}
+
+/* Aktif link için border rengini değiştirin */
+.nav-link.active {
+  border-bottom-color: #007bff; /* Aktif link için border rengi */
+}
+
+/* Medium ve daha büyük boyutlarda fs-5 boyutuna geç */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .responsive-font-size {
+    font-size: 0.7rem; /* Bootstrap fs-5 boyutu */
+  }
+}
+
 /*! Navbar END */
 
 /*! TopCarousel START */
@@ -160,47 +147,6 @@ body {
 }
 /*! Kultur und Kunst END */
 
-.nav-item:hover {
-  color: transparent; /* Hover durumunda metin rengini yeşil yap */
-}
-
-.custom-background {
-  position: relative; /* Pseudo-element için konum referansı */
-  z-index: 1;
-  height: "";
-}
-
-.custom-background::before {
-  content: ""; /* Pseudo-elementi görünür hale getirir */
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url("https://cdn.pixabay.com/photo/2019/08/18/23/42/flags-4415210_640.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.1; /* Opaklığı ayarla */
-  z-index: -1; /* İçerikten arkada olacak */
-}
-
-/* CSS dosyanızda */
-.active-button {
-  background-color: #ffc107; /* Bootstrap bg-warning rengi */
-  color: white; /* Metin rengini belirginleştirmek için */
-}
-
-/* Aktif olmayan linkler için şeffaf border */
-.nav-link {
-  border-bottom: 2px solid transparent; /* Sayfanızın arka plan rengine göre ayarlayın */
-  transition: border-color 0.3s; /* Pürüzsüz bir geçiş için */
-}
-
-/* Aktif link için border rengini değiştirin */
-.nav-link.active {
-  border-bottom-color: #007bff; /* Aktif link için border rengi */
-}
 
 /*? Home START */
 /*! Aktuell START */

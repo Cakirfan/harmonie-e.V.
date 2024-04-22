@@ -69,7 +69,7 @@ const Navbar = ({ setSelectedMenuItem }) => {
 
 
   return (
-    <div className="fixed-top border-bottom border-danger border-5">
+    <div className="fixed-top border-bottom border-danger border-5 mx-auto">
       <div className="bg-white d-none d-lg-block">
         {showContactBar && <ContactBar />}
       </div>
@@ -151,7 +151,7 @@ const Navbar = ({ setSelectedMenuItem }) => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               {menuItems.map((item, index) => (
                 <li
-                  className={`nav-item fs-7 fw-semibold px-2 ${
+                  className={`nav-item responsive-font-size text-center fw-semibold px-2 ${
                     index !== menuItems.length - 1 ? "border-end" : ""
                   }`}
                   key={index}
