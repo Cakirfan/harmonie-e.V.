@@ -5,12 +5,12 @@ import {
   FaLocationArrow,
   FaPhone,
   FaEnvelopeOpenText,
-  FaArrowRight,
   FaFacebookF,
   FaInstagram,
   FaLinkedin,
   FaTwitter,
-  FaHandPointRight
+  FaHandPointRight,
+  FaHandPointDown,
 } from "react-icons/fa";
 import logo from "../assets/img/logo-harmonie.jpeg";
 import { motion } from "framer-motion";
@@ -19,6 +19,19 @@ import KontaktModal from "./modals/KontaktModal";
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [show, setShow] = useState(false);
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Component unmount olduğunda event listener'ı temizle
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -75,40 +88,77 @@ const Footer = () => {
     },
   };
 
+  const wavingHandVariants = {
+    animate: {
+      x: ["0%", "50%", "0%", "-20%", "0%"], // İkonun x ekseninde hareket edeceği yüzdeler
+      transition: {
+        x: {
+          repeat: Infinity, // Animasyonun sürekli tekrar etmesi
+          repeatType: "loop",
+          duration: 3, // Her döngünün süresi
+          ease: "easeInOut", // Animasyonun hızlanma ve yavaşlama şekli
+        },
+      },
+    },
+  };
+
+  const mobileHandVariants = {
+    animate: {
+      y: ["0%", "50%", "0%", "10%", "0%"], // İkonun y ekseninde hareket edeceği yüzdeler
+      transition: {
+        y: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 2,
+          ease: "easeInOut",
+        },
+      },
+    },
+  };
+
   return (
     <>
       <section className="bg-warning" style={{ marginTop: "5rem" }}>
-        <div className="row py-2">
-          <div className="col text-dark text-end fs-2 mb-3 mt-4 mt-md-2">
-            Kontaktieren Sie uns per{" "}
-            <FaHandPointRight
-              className="fs-1 ms-3"
-              style={{ height: "2rem" }}
-              icon={FaHandPointRight}
-            />
-          </div>
-          <div className="col d-flex">
-            <div className="mt-md-2 py-2">
-              {sozialIcons.map((icon, i) => (
-                <Link key={i} to={icon.href}>
-                  <button
-                    type="button"
-                    className="btn btn-outline-success mx-2 mx-md-2"
-                  >
-                    {icon.icon}
-                  </button>
-                </Link>
-              ))}
-            </div>
-            <div className="mt-md-1 pt-2 fs-4 text-center ms-2">
-              <button
-                type="button"
-                className="btn btn-success rounded-3 border-0 px-3"
-                onClick={handleShow}
+        <div className="container">
+          <div className="row mx-auto py-1">
+            <div className="col-12 col-md-5 d-flex text-dark fs-2 mb-md-0">
+              Kontaktieren Sie uns per{" "}
+              <motion.div
+                className="fs-1 ms-3"
+                style={{ height: "2rem" }}
+                variants={isMobile ? mobileHandVariants : wavingHandVariants}
+                animate="animate"
               >
-                <FaEnvelopeOpenText className="fs-5 mb-1 me-2" />
-                <span className="py-2 fs-5">Kontaktformular</span>
-              </button>
+                {isMobile ? (
+                  <FaHandPointDown className="mb-3" />
+                ) : (
+                  <FaHandPointRight className="mb-3" />
+                )}
+              </motion.div>
+            </div>
+            <div className="col-12 col-md-7 d-flex justify-content-end">
+              <div className="py-2">
+                {sozialIcons.map((icon, i) => (
+                  <Link key={i} to={icon.href}>
+                    <button
+                      type="button"
+                      className="btn btn-sm btn-outline-success mx-1 mx-md-2"
+                    >
+                      {icon.icon}
+                    </button>
+                  </Link>
+                ))}
+              </div>
+              <div className="fs-4 text-center ms-md-2 mt-1">
+                <button
+                  type="button"
+                  className="btn btn-sm btn-success rounded-3 border-0 px-3"
+                  onClick={handleShow}
+                >
+                  <FaEnvelopeOpenText className="fs-5 mb-1 me-2" />
+                  <span className="py-2 fs-5">Mitgliedsformular</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -168,9 +218,9 @@ const Footer = () => {
           </div>
         </div>
       </motion.section>
-      <div className="container-fluid bg-success-subtle p-3">
-        <div className="container mt-2">
-          <p className="text-success text-center">
+      <div className="container-fluid bg-success-subtle p-2">
+        <div className="container">
+          <p className="text-success text-center mb-0">
             ©<span>{new Date().getUTCFullYear()}</span> Harmonie e.V.. All
             Rights Reserved.
           </p>

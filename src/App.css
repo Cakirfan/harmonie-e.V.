@@ -306,3 +306,17 @@ body {
 }
 
 /*! Mitgliedschaft END */
+
+/*! Mitgliedschaft START */
+
+@media (max-width: 576px) { /* SM breakpoint */
+  .a .b .c {
+    font-size: 0.3rem !important;
+  }
+  .btn-sm { /* Daha küçük butonlar */
+    padding: 0.25rem 0.5rem;
+    font-size: 0.675rem;
+  }
+}
+
+/*! Mitgliedschaft END */
