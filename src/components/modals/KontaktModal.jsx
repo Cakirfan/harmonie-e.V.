@@ -6,7 +6,6 @@ import { IoOpenOutline } from "react-icons/io5";
 import DatenSchutzModal from "./DatenSchutzModal";
 import FormDataDisplayModal from "./FormDataDisplayModal"; // New component to display the form data
 import { Col, Row } from "react-bootstrap";
-import { FaPrint } from "react-icons/fa";
 
 function KontaktModal({ show, handleClose }) {
   const [formData, setFormData] = useState({
@@ -187,7 +186,6 @@ function KontaktModal({ show, handleClose }) {
                     value={formData.förderbeitrag}
                     onChange={handleChange}
                     placeholder="Förderbeitrag (€)"
-                    required
                   />
                 </Form.Group>
               </Col>
@@ -205,7 +203,6 @@ function KontaktModal({ show, handleClose }) {
                     value={formData.kontonr}
                     onChange={handleChange}
                     placeholder="Konto Nr."
-                    required
                   />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formIBAN">
@@ -216,7 +213,6 @@ function KontaktModal({ show, handleClose }) {
                     value={formData.iban}
                     onChange={handleChange}
                     placeholder="IBAN"
-                    required
                   />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBIC">
@@ -227,7 +223,6 @@ function KontaktModal({ show, handleClose }) {
                     value={formData.bic}
                     onChange={handleChange}
                     placeholder="BLZ BIC"
-                    required
                   />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formKreditInstitut">
@@ -238,7 +233,6 @@ function KontaktModal({ show, handleClose }) {
                     value={formData.institut}
                     onChange={handleChange}
                     placeholder="KreditInstitut"
-                    required
                   />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formInhaber">
@@ -249,7 +243,6 @@ function KontaktModal({ show, handleClose }) {
                     value={formData.inhaber}
                     onChange={handleChange}
                     placeholder="Kontoinhaber/in"
-                    required
                   />
                 </Form.Group>
               </Col>
@@ -268,19 +261,16 @@ function KontaktModal({ show, handleClose }) {
           </Form>
         </Modal.Body>
         <Modal.Footer className="bg-warning border border-danger">
-          <Button variant="success" onClick={handleClose}>
-            <FaPrint className="mx-2" />
-          </Button>
           <Button variant="danger" onClick={handleClose}>
             Schließen
           </Button>
           <Button
             type="submit"
-            variant="primary"
+            variant="success"
             onClick={handleSubmit}
             form="kontaktForm"
           >
-            Senden
+            Weiter
           </Button>
         </Modal.Footer>
       </Modal>
@@ -289,6 +279,7 @@ function KontaktModal({ show, handleClose }) {
         show={showFormData}
         handleClose={() => setShowFormData(false)}
         data={submittedData}
+        handleSubmit={handleSubmit}
       />
     </>
   );

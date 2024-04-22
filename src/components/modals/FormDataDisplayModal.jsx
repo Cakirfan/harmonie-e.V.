@@ -3,8 +3,9 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
 import { FaCheck, FaPrint } from "react-icons/fa";
+import Logo from "../../assets/img/logo-harmonie.jpeg";
 
-const FormDataDisplayModal = ({ show, handleClose, data }) => {
+const FormDataDisplayModal = ({ show, handleClose, data, handleSubmit }) => {
   const printRef = useRef();
 
   const handlePrint = () => {
@@ -19,10 +20,18 @@ const FormDataDisplayModal = ({ show, handleClose, data }) => {
             line-height: 1.6;
             margin: 20px;
           }
+          .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          img.logo {
+            height: 100px;
+            margin-right: 20px;
+          }
           .titel {
-            margin-top: 50px;
             font-size: 24px;
-            text-align: center;
+            margin-right: 170px
           }
           table {
             width: 100%;
@@ -71,8 +80,20 @@ const FormDataDisplayModal = ({ show, handleClose, data }) => {
           .signature-right {
             align-items: flex-end; /* Right side align end */
           }
+           img.logo {
+            display: block;
+            margin: 0 auto;
+            height: 100px; /* Adjust according to your needs */
+          }
+           @media print {
+            #pageHeader, #pageFooter {
+              display: none !important;
+            }
+          }
         </style>
       `;
+
+       const logoHtml = `<div class="header"><img src="${Logo}" alt="Logo" class="logo"><span class="titel">Antrag auf Mitgliedschaft</span></div>`;
 
       windowPrint.document.write(`
         <html>
@@ -81,17 +102,18 @@ const FormDataDisplayModal = ({ show, handleClose, data }) => {
           ${css}
         </head>
         <body>
+          ${logoHtml}
           ${printContents}
         </body>
         </html>
       `);
 
-      windowPrint.document.close();
-      windowPrint.focus();
-      setTimeout(() => {
-        windowPrint.print();
-        windowPrint.close();
-      }, 250);
+       windowPrint.document.close();
+       windowPrint.focus();
+       setTimeout(() => {
+         windowPrint.print();
+         windowPrint.close();
+       }, 250);
     } else {
       console.error("Print content is not available.");
     }
@@ -99,7 +121,16 @@ const FormDataDisplayModal = ({ show, handleClose, data }) => {
 
   return (
     <Modal show={show} onHide={handleClose}>
-      <Modal.Header closeButton>
+      <Modal.Header
+        closeButton
+        className="d-flex align-items-center justify-content-start"
+      >
+        <img
+          src={Logo}
+          alt="Logo"
+          width={100}
+          style={{ marginRight: "15px" }}
+        />
         <Modal.Title className="titel">Antrag auf Mitgliedschaft</Modal.Title>
       </Modal.Header>
       <Modal.Body ref={printRef}>
@@ -206,11 +237,19 @@ const FormDataDisplayModal = ({ show, handleClose, data }) => {
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>
-          Close
-        </Button>
         <Button variant="primary" onClick={handlePrint}>
           <FaPrint /> Print
+        </Button>
+        <Button variant="danger" onClick={handleClose}>
+          Schließen
+        </Button>
+        <Button
+          type="submit"
+          variant="success"
+          onClick={handleSubmit}
+          form="kontaktForm"
+        >
+          Senden
         </Button>
       </Modal.Footer>
     </Modal>

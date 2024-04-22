@@ -13,26 +13,31 @@ import { motion } from "framer-motion";
 const ContactBar = () => {
   const socialMedia = [
     {
+      name: "whatsapp",
+      href: "https://wa.me/4915566051266",
+      icon: <FaWhatsapp />,
+      title: "WhatsApp",
+    },
+    {
       name: "facebook",
       href: "https://www.facebook.com",
       icon: <FaFacebook />,
+      title: "Facebook",
     },
     {
       name: "twitter",
       href: "https://www.twitter.com",
       icon: <FaTwitter />,
+      title: "Twitter",
     },
     {
       name: "instagram",
       href: "https://www.instagram.com",
       icon: <FaInstagram />,
-    },
-    {
-      name: "whatsapp",
-      href: "https://wa.me/4915566051266",
-      icon: <FaWhatsapp />,
+      title: "Instagram",
     },
   ];
+  
 
   const containerVariants = {
     hidden: { opacity: 0, x: -100 },
@@ -86,7 +91,7 @@ const ContactBar = () => {
               key={i}
               to={item.href}
               target="_blank"
-              className="text-secondary"
+              style={{ color: "inherit" }}
             >
               {item.icon}
             </Link>
