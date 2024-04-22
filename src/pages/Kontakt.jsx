@@ -148,7 +148,7 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log("Email sent:", result.text);
-          toastSuccessNotify("E-mail başarıyla gönderildi!");
+          toastSuccessNotify("E-mail erfolgreich gesendet!");
           // Formu sıfırla
           setFormData({
             from_name: "",
@@ -160,7 +160,9 @@ const ContactForm = () => {
         },
         (error) => {
           console.log("Email sending error:", error.text);
-          toastErrorNotify("E-mail gönderilirken hata oluştu.");
+          toastErrorNotify(
+            "Beim Senden der E-Mail ist ein Fehler aufgetreten."
+          );
         }
       );
   };
