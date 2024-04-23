@@ -72,7 +72,7 @@ const Aktuell = () => {
                   <p className="card-text mb-auto">
                     <small className="text-secondary">
                       Die Veranstaltung fand am{" "}
-                      <span className="text-dark">{info.date}</span> statt.
+                      <span className="text-dark">{info.date || "..."}</span> statt.
                     </small>
                   </p>
                 </div>

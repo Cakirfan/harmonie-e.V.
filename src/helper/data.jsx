@@ -67,7 +67,7 @@ const hauptInfo = [
   {
     id: 4,
     type: "newss",
-    situation: "new",
+    situation: "old",
     titel: "Titel über aktuelle Daten (1)",
     desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
     desc2:
@@ -93,9 +93,10 @@ const hauptInfo = [
   },
   {
     id: 5,
+    date: "",
     type: "newss",
     situation: "new",
-    titel: "Titel über aktuelle Daten (2)",
+    titel: "Titel über aktuelle Daten",
     desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
     desc2:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae.",
@@ -264,14 +265,18 @@ const hauptInfo = [
   },
   {
     id: 13,
+    date: "Samstags",
     type: "jugend",
-    situation: "old",
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle jugendliche Aktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
+    situation: "new",
+    titel: "Handwerkliche Aktivitäten",
+    desc: "Harmonie e.V. bietet Kindern während des Schuljahres 2023 - 2024 spezielle Handwerks-und Werkstattangebote einer besonderen Art an. In einer Zeit, in der sich die Kinder vermehrt individuellen Spielen aufgrund der Digitalisierung widmen, tragen unsere Aktivitäten nicht nur dazu bei, dass sie neue Erfahrungen sammeln, sondern fördern das Miteinander und tragen somit auch zur Entwicklung des Teamgeistes bei.",
     desc2:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae. Blanditiis, explicabo! Sit nihil dolor ipsam error totam nam magnam iure consectetur placeat. Culpa corporis laudantium cumque quis repellat! Sed delectus voluptatibus dicta, magni odio dignissimos necessitatibus pariatur rerum hic, nesciunt repellendus incidunt quibusdam sit. Quis voluptatum rem, consectetur, exercitationem suscipit, vitae fugiat quia illum incidunt praesentium voluptas sed id! Iste, doloremque nulla. Pariatur eaque commodi odio corrupti labore ipsam sit nihil, consequatur fugiat exercitationem aut eos dolorum sequi asperiores dicta ipsum officia sed voluptas, veritatis sunt. Sapiente suscipit vel, dignissimos aperiam aspernatur ab. Sunt, repudiandae maxime. Illo, nostrum.",
+      "Harmonie e.V. bietet Kindern während des Schuljahres 2023 - 2024 spezielle Handwerks-und Werkstattangebote einer besonderen Art an. In einer Zeit, in der sich die Kinder vermehrt individuellen Spielen aufgrund der Digitalisierung widmen, tragen unsere Aktivitäten nicht nur dazu bei, dass sie neue Erfahrungen sammeln, sondern fördern das Miteinander und tragen somit auch zur Entwicklung des Teamgeistes bei. Erfahrene Betreuer begleiten die Kinder während der Aktivitätsstunden, in denen jede Woche verschiedene handwerkliche Fähigkeiten erlernt werden. Dank dieser Palette an Angeboten können die Kinder nicht nur ihre eigene Kreativität entdecken, sondern auch Erfahrung sammeln. Um sicherzustellen, dass die Kinder im Schuljahr 2023 - 2024 eine unterhaltsame und lehrreiche Zeit verbringen, sind wir für die Kinder stets da.",
+    desc3:
+      "Wir freuen uns, einen Beitrag zur Entwicklung der teilnehmenden Kinder leisten zu können.",
+    desc4: "Veranstaltungszeitraum: Jeden Samstag von 10:30 Uhr - 13:30 Uhr",
     image:
-      "https://cdn.pixabay.com/photo/2023/11/08/14/03/ai-generated-8374826_640.jpg",
+      "https://cdn.pixabay.com/photo/2016/06/09/02/42/crayons-1445053_640.jpg",
     video: "",
     images: [
       "/images/jugend/jFoto-1.png",

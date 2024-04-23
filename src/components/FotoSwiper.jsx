@@ -101,7 +101,7 @@ const FotoSwiper = ({ categoryDetails = [] }) => {
             <motion.img
               src={selectedMedia?.file}
               alt="Selected"
-              className="img-fluid"
+              className="img-fluid w-100"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3 }}

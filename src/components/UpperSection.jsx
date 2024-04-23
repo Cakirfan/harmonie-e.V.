@@ -34,10 +34,13 @@ const UpperSection = ({ categoryDetails, isModalOpen, setModalOpen }) => {
           <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
             {categoryDetails.desc3 || ""}
           </p>
+          <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
+            {categoryDetails.desc4 || ""}
+          </p>
           <div>
             <small className="text-secondary ms-2">
               Die Veranstaltung fand am{" "}
-              <span className="text-dark">{categoryDetails.date}</span> statt.
+              <span className="text-dark">{categoryDetails.date || "..."}</span> statt.
             </small>
           </div>
         </div>
@@ -101,7 +104,7 @@ const UpperSection = ({ categoryDetails, isModalOpen, setModalOpen }) => {
               )}
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={() => setModalOpen(false)}>Close</Button>
+              <Button onClick={() => setModalOpen(false)}>Schließen</Button>
             </Modal.Footer>
           </Modal>
         </motion.div>
