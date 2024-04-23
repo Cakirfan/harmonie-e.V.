@@ -9,27 +9,19 @@ const ProjektDetail = () => {
   const { id } = useParams(); // Grab the category ID from the URL
   const [categoryDetails, setCategoryDetails] = useState(null);
 
-  const [modalShow, setModalShow] = useState(false);
-  const [selectedImage, setSelectedImage] = useState("");
+  useEffect(() => {
+    const details = projekte.find((info) => info.id.toString() === id);
+    if (details) {
+      setCategoryDetails(details);
+      console.log(details); // Log the fetched details directly
+    } else {
+      console.log("No details found for id:", id);
+    }
+  }, [id]);
 
- useEffect(() => {
-   const details = projekte.find((info) => info.id.toString() === id);
-   if (details) {
-     setCategoryDetails(details);
-     console.log(details); // Log the fetched details directly
-   } else {
-     console.log("No details found for id:", id);
-   }
- }, [id]);
-
- if (!categoryDetails) {
-   return <div>Loading...</div>; // Or some error message
- }
-
-   const handleShow = (imgSrc) => {
-     setSelectedImage(imgSrc);
-     setModalShow(true);
-   };
+  if (!categoryDetails) {
+    return <div>Loading...</div>; // Or some error message
+  }
 
   return (
     <div className="d-flex flex-column align-items-center my-5">
@@ -43,13 +35,7 @@ const ProjektDetail = () => {
         </div>
       </div>
       <div className="col col-md-12 mx-auto">
-        <FotoSwiper
-          images={categoryDetails ? categoryDetails.images : []}
-          handleShow={handleShow}
-          selectedImage={selectedImage}
-          setModalShow={setModalShow}
-          modalShow={modalShow}
-        />
+        <FotoSwiper categoryDetails={categoryDetails} />
       </div>
     </div>
   );
