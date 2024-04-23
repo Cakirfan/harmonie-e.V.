@@ -9,19 +9,11 @@ const MigrationsDetail = () => {
   const { id } = useParams(); // Grab the category ID from the URL
   const [categoryDetails, setCategoryDetails] = useState(null);
 
-  const [modalShow, setModalShow] = useState(false);
-  const [selectedImage, setSelectedImage] = useState("");
-
   useEffect(() => {
     const details = hauptInfo.find((info) => info.id.toString() === id);
     setCategoryDetails(details);
     console.log(categoryDetails);
   }, [id]);
-
-  const handleShow = (imgSrc) => {
-    setSelectedImage(imgSrc);
-    setModalShow(true);
-  };
 
   return (
     <div className="d-flex flex-column align-items-center my-5">
@@ -35,13 +27,7 @@ const MigrationsDetail = () => {
         </div>
       </div>
       <div className="col col-md-12 mx-auto">
-        <FotoSwiper
-          images={categoryDetails ? categoryDetails.images : []}
-          handleShow={handleShow}
-          selectedImage={selectedImage}
-          setModalShow={setModalShow}
-          modalShow={modalShow}
-        />
+        <FotoSwiper categoryDetails={categoryDetails} />
       </div>
     </div>
   );

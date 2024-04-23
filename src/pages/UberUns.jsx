@@ -44,7 +44,12 @@ const UberUns = () => {
 
   return (
     <div style={windowWidth < 768 ? { marginTop: "-2.1rem" } : {}}>
-      <Carousel id="carouselExample" className="carousel" indicators={false} controls={false}>
+      <Carousel
+        id="carouselExample"
+        className="carousel"
+        indicators={false}
+        controls={false}
+      >
         <Carousel.Item>
           <motion.img
             src={uber}
@@ -112,7 +117,7 @@ const UberUns = () => {
           <hr className="border-3 shadow border-danger my-5" />
         </div>
         <div className="col col-md-9 col-lg-8 mb-3">
-          <div className="row g-0">
+          <div className="row g-0 shadow-lg">
             <img
               src={subImage}
               className="img-fluid rounded-start col-md-6"

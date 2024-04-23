@@ -65,53 +65,82 @@ const JugendSoziales = () => {
           <span className="bg-warning text-white py-2 px-3 fw-semibold">
             JUGENDARBEIT
           </span>
-          <h1 className="fw-semibold mb-3 mt-5">Sozialwesen und Jugend</h1>
+          <h2 className="fw-semibold mb-3 mt-5">
+            Sozialwesen und Jugend bei{" "}
+            <span className="text-success">Harmonie e.V.</span> :{" "}
+            <span className="fs-4 text-secondary">
+              Eine Zukunft voller Möglichkeiten
+            </span>
+          </h2>
           <p className="text-justify text-secondary fs-5">
-            Die Förderung der Jugend ist ein grundlegendes Element unserer
-            gemeinnützigen Bemühungen im Harmonie e.V. Unser Bestreben liegt
-            darin, junge Menschen auf dem Weg zu selbstständigen,
-            handlungsfähigen und kritisch denkenden Erwachsenen zu begleiten,
-            die einen konstruktiven Beitrag zur Gesellschaft leisten. Im Fokus
-            unserer Jugendarbeit stehen allgemeingültige ethische Prinzipien wie
-            Integrität, Toleranz, Anerkennung von Vielfalt, Wahrung der
-            Menschenwürde, Übernahme von Verantwortung und Zivilcourage. Wir
-            möchten den Herausforderungen der modernen Welt begegnen, indem wir
-            zielgerichtete Angebote für Kinder und Jugendliche entwickeln. Diese
-            sollen sie dazu motivieren, sich gesellschaftlich zu engagieren und
-            aktiv an der Bewältigung lokaler und globaler Herausforderungen
-            teilzunehmen.
+            Harmonie e.V. sieht in der Jugendförderung ein grundlegendes Element
+            seiner gemeinnützigen Bemühungen. Wir investieren leidenschaftlich
+            in junge Menschen, indem wir sie auf ihrem Weg zu selbstständigen,
+            handlungsfähigen und kritisch denkenden Erwachsenen unterstützen,
+            die einen konstruktiven Beitrag zur Gesellschaft leisten. Dabei
+            stehen ethische Prinzipien wie Integrität, Toleranz, Anerkennung von
+            Vielfalt und Zivilcourage im Fokus unserer Arbeit.
           </p>
+
           <h5 className="fw-semibold mb-3 mt-5">
-            Unsere Jugendarbeit umfasst vielfältige Initiativen:
+            Zielgerichtete Initiativen und Programme
           </h5>
           <ul className="list">
             <li className="list-group-item fs-5 text-secondary">
-              - Projekte mit Jugendlichen, die kreative Ideen fördern.
+              <strong>Kreative und kulturelle Entfaltung:</strong> Durch
+              Kunstworkshops, Sportveranstaltungen und kulturelle Ausflüge
+              bieten wir Jugendlichen die Möglichkeit, ihre Fähigkeiten zu
+              entdecken und zu entwickeln.
+            </li>
+            <li className="list-group-item fs-5 text-secondary my-2">
+              <strong>Förderung von Gemeinschaft und Zusammenhalt:</strong>{" "}
+              Sosialevents und speziell konzipierte Veranstaltungen für
+              Jugendliche stärken das Gemeinschaftsgefühl und das
+              Selbstvertrauen.
             </li>
             <li className="list-group-item fs-5 text-secondary">
-              - Sosialevents, die Gemeinschaft und Zusammenhalt stärken.
-            </li>
-            <li className="list-group-item fs-5 text-secondary">
-              - Individuelle oder Gruppenschulungen für persönliche Entwicklung.
-            </li>
-            <li className="list-group-item fs-5 text-secondary">
-              - Veranstaltungen, die speziell für Jugendliche konzipiert sind.
-            </li>
-            <li className="list-group-item fs-5 text-secondary">
-              - Aktivitäten zur Förderung handwerklicher Fertigkeiten und
-              Talente.
+              <strong>Persönliche und berufliche Entwicklung:</strong>{" "}
+              Individuelle und Gruppenschulungen, Mentoring- und
+              Beratungsdienste unterstützen die Jugendlichen in ihrer
+              persönlichen und beruflichen Entwicklung. Erfahrene Erwachsene
+              bauen Mentorenbeziehungen auf, die die Perspektiven der
+              Jugendlichen erweitern und ihnen helfen, ihre Ziele zu erreichen.
             </li>
           </ul>
+
+          <h4 className="fw-semibold mb-3 mt-5">
+            Unterstützung bei der Verwirklichung der Ideale
+          </h4>
           <p className="text-justify text-secondary fs-5">
-            Wir setzen uns leidenschaftlich dafür ein, jungen Menschen eine
-            vielseitige Plattform zu bieten, auf der sie ihre Interessen
-            entfalten, lernen und wachsen können. Entdecke mit uns die Welt der
-            Möglichkeiten!
+            Wir ermutigen Jugendliche dazu, ihre eigenen Ideen zu präsentieren
+            und umzusetzen. Unsere Plattform hilft ihnen, sich untereinander zu
+            vernetzen und ihre Projekte erfolgreich vorzustellen.
           </p>
+
+          <h4 className="fw-semibold mb-3 mt-5">Investition in die Zukunft</h4>
+          <p className="text-justify text-secondary fs-5">
+            Als Harmonie e.V. freuen wir uns, einen Beitrag dazu leisten zu
+            können, dass Jugendliche ihre Potenziale entdecken und sich optimal
+            auf die Zukunft vorbereiten. Über unsere Jugendplattform ermöglichen
+            wir es den Jugendlichen, ihre Stärken zu erkennen, sich auszudrücken
+            und einen positiven Beitrag zu ihrer Selbstverwirklichung zu
+            leisten.
+          </p>
+
+          <h4 className="fw-semibold mb-3 mt-5">
+            Entdecke mit uns die Welt der Möglichkeiten!
+          </h4>
+          <p className="text-justify text-secondary fs-5">
+            Unsere vielfältigen Initiativen bieten jungen Menschen eine
+            Plattform, auf der sie ihre Interessen entfalten, lernen und wachsen
+            können. Entdecke mit uns die Welt der Möglichkeiten und gestalte
+            aktiv die Zukunft mit.
+          </p>
+
           <hr className="border-3 shadow border-danger my-5" />
         </div>
-        <div className="col col-md-8 mb-3">
-          <div className="row g-0">
+        <div className="col col-md-8 my-3">
+          <div className="row g-0 shadow-lg">
             <div className="col-md-6 bg-success-subtle">
               <div className="card-body p-4 p-md-5">
                 <span className="bg-warning text-white py-2 px-3 fw-semibold">

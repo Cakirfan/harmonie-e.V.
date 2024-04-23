@@ -95,7 +95,7 @@ const Bildung = () => {
           <hr className="border-3 shadow border-danger my-5" />
         </div>
         <div className="col col-md-8 mb-3">
-          <div className="row g-0">
+          <div className="row g-0 shadow-lg">
             <div className="col-md-6">
               <img
                 src={subImage}

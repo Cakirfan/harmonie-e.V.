@@ -65,48 +65,102 @@ const MigrationsArbeit = () => {
           <span className="bg-warning text-white py-2 px-3 fw-semibold">
             Migrationsarbeit
           </span>
-          <h1 className="fw-semibold mb-3 mt-5">Migration</h1>
+          <h2 className="fw-semibold my-5">
+            Integration und Bildung:{" "}
+            <p className="mt-3 fs-4 text-secondary">
+              Die Schlüsselrollen von{" "}
+              <span className="text-success">Harmonie e.V.</span> im
+              Unterstützungsnetzwerk für Migranten
+            </p>
+          </h2>
+
+          <h5 className="fw-semibold mb-3 mt-5">
+            Einbindung von Anfang an: Unser Engagement für neu angekommene
+            Migranten
+          </h5>
           <p className="text-justify text-secondary fs-5">
-            Harmonie e.V. Verein setzt sich seit einigen Jahren für die
-            Förderung von Bildung und die Integration von Menschen verschiedener
-            Nationen und Kulturen ein. Als der deutsche Staat in den Jahren 2015
-            bis 2022 Hunderttausenden geflüchteten Menschen humanitäre
-            Unterstützung gewährte und diese in das Land aufnahm, waren nur
-            wenige über die Herausforderungen im Klaren, die ehrenamtliche
-            Arbeit erfordert, um neu angekommene Menschen hier zu integrieren.
-            In dieser Situation wurden alle Bürger des Landes dazu aufgerufen,
-            dem Staat durch freiwilliges Engagement zu helfen. Auch wir als
-            Verein sahen es als unsere Pflicht an, unsere bereits bestehende
-            Gruppe von Freiwilligen für den Bereich "Flüchtlingshilfe" zu
-            mobilisieren.
+            Seit der humanitären Aufnahme von hunderttausenden Geflüchteten
+            zwischen 2015 und 2022 durch den deutschen Staat hat Harmonie e.V.
+            sich intensiv in der Flüchtlingshilfe engagiert. Unser Verein hat es
+            sich zur Aufgabe gemacht, den Neuankömmlingen durch Bildung und
+            Integration zu helfen, sich in ihrer neuen Heimat zurechtzufinden.
+            Wir wissen, wie herausfordernd und entscheidend die erste Phase der
+            Integration ist. Daher fördern wir den raschen Austausch mit der
+            lokalen Gesellschaft, um Ängste zu reduzieren und den sozialen
+            Zusammenhalt zu stärken.
           </p>
+
+          <h5 className="fw-semibold mb-3 mt-5">
+            Maßgeschneiderte Schulungsprogramme für eine erfolgreiche
+            Integration
+          </h5>
           <p className="text-justify text-secondary fs-5">
-            Sind Sie ein Neuankömmling/Flüchtling und benötigen Unterstützung
-            während Ihrer ersten Integrationsphase? Leben Sie bereits seit
-            einiger Zeit in Neuss und möchten ein neues soziales Umfeld in Ihrer
-            neuen Heimatstadt aufbauen?
+            Um die Eingliederung zu erleichtern, bietet Harmonie e.V.
+            spezialisierte Schulungsprogramme, die auf die Bedürfnisse von
+            Migranten zugeschnitten sind:
           </p>
-          <h1 className="fw-semibold mb-3 mt-5">Eingliederungsbesuche</h1>
+
+          <ul className="list">
+            <li className="list-group-item fs-5 text-secondary">
+              <strong>Leben in Deutschland:</strong> Dieses Programm bietet
+              praktische Orientierungshilfen zum Alltagsleben, informiert über
+              kulturelle Unterschiede und hilft beim Aufbau von
+              Lebenskompetenzen.
+            </li>
+            <li className="list-group-item fs-5 text-secondary my-2">
+              <strong>Deutsches Bildungssystem: </strong> Wir erklären das
+              Schulsystem in Deutschland, unterstützen Eltern in ihrer
+              Erziehungsrolle und fördern die kommunikative Inklusion der Kinder
+              ins Schulleben.
+            </li>
+            <li className="list-group-item fs-5 text-secondary">
+              <strong>Berufsausbildung in Deutschland: </strong> Unsere Beratung
+              reicht von der Hilfe bei der Berufswahl bis zum Bewerbungsprozess
+              und den Einstiegsmöglichkeiten ins Berufsleben.
+            </li>
+            <li className="list-group-item fs-5 text-secondary">
+              <strong>Deutsches Gesundheitswesen: </strong> Wir bieten
+              Orientierung im Gesundheitssystem, vermitteln Kontakte zu
+              medizinischen Einrichtungen und fördern einen gesunden Lebensstil.
+            </li>
+          </ul>
+
+          <h5 className="fw-semibold mb-3 mt-5">
+            Erfahrungsaustausch und Community-Aufbau
+          </h5>
           <p className="text-justify text-secondary fs-5">
-            In der ersten Phase der Integration von Geflüchteten ist ein rascher
-            Austausch mit der lokalen Gesellschaft von entscheidender Bedeutung,
-            um Ängste zu reduzieren, Beziehungen zu knüpfen und somit den
-            Integrationsprozess zu beschleunigen. Als Verein ermutigen wir daher
-            Geflüchtete, Besuche bei unterschiedlichen Persönlichkeiten und
-            Einrichtungen in ihren jeweiligen Städten und Gemeinden zu
-            unternehmen, und unterstützen sie bei der Organisation solcher
-            Treffen.
+            Harmonie e.V. legt großen Wert auf den Aufbau von sozialen
+            Netzwerken. Wir ermutigen Migranten, sich aktiv an der Gemeinschaft
+            zu beteiligen und unterstützen sie bei der Organisation von
+            Begegnungen mit lokalen Einrichtungen und Persönlichkeiten. Diese
+            interkulturellen Begegnungen sind essentiell, um das Verständnis und
+            die Akzeptanz auf beiden Seiten zu fördern.
           </p>
+
+          <h5 className="fw-semibold mb-3 mt-5">
+            Unser Versprechen: Starke Unterstützung für eine starke Gemeinschaft
+          </h5>
           <p className="text-justify text-secondary fs-5">
-            Wir sind erfreut darüber, dass wir auf diese Weise eine Verbindung
-            zwischen Geflüchteten und den jeweiligen Institutionen bzw.
-            Persönlichkeiten herstellen können, und möchten uns bereits jetzt
-            für die gastfreundliche Aufnahme bedanken.
+            Durch unser umfassendes Angebot an Schulungen und die Förderung des
+            direkten Austauschs stärken wir nicht nur Individuen, sondern die
+            gesamte Gesellschaft. Integration basiert auf gesunder Kommunikation
+            und gegenseitigem Verständnis – Werte, die wir bei Harmonie e.V.
+            täglich leben und weitergeben.
+          </p>
+          <h5 className="fw-semibold mb-3 mt-5">
+            Treten Sie der Harmonie bei, um gemeinsam eine inklusive Zukunft zu
+            gestalten!
+          </h5>
+          <p className="text-justify text-secondary fs-5">
+            Harmonie e.V. steht mit seinem Namen für Toleranz, Unterstützung und
+            erfolgreiche Integration. Wir sind stolz darauf, eine Brücke
+            zwischen Kulturen zu schlagen und freuen uns auf die weitere
+            Zusammenarbeit mit allen, die Teil unserer Mission sind.
           </p>
           <hr className="border-3 shadow border-danger my-5" />
         </div>
         <div className="col col-md-8 mb-3">
-          <div className="row g-0">
+          <div className="row g-0 shadow-lg">
             <div className="col-md-6 bg-success-subtle">
               <div className="card-body p-4 p-md-5">
                 <span className="bg-warning text-white py-2 px-3 fw-semibold">

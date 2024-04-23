@@ -8,7 +8,7 @@ const Aktuell = () => {
   const [aktuelInfo, setAktuelInfo] = useState([]);
 
   useEffect(() => {
-    const filteredInfo = hauptInfo.filter((info) => info.type === "newss");
+    const filteredInfo = hauptInfo.filter((info) => info.situation === "new");
     setAktuelInfo(filteredInfo);
   }, []);
 
@@ -25,6 +25,14 @@ const Aktuell = () => {
       },
     },
   };
+
+  function truncateText(text, limit) {
+    const words = text.split(" ");
+    if (words.length > limit) {
+      return words.slice(0, limit).join(" ") + "...";
+    }
+    return text;
+  }
 
   return (
     <div className="container-fluid bg-body-tertiary py-5 border-bottom border-3 border-top border-success">
@@ -47,31 +55,27 @@ const Aktuell = () => {
               />
             </div>
             <div className="col-12 col-md-7 py-2">
-              <div className="card-body">
+              <div className="card-body d-flex flex-column h-100">
                 <h3 className="text-success">{info.titel}</h3>
-                <p className="fs-5 text-secondary mt-4">{info.desc}</p>
-                <p className="fs-6 text-secondary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laboriosam cupiditate nostrum aut corporis iusto, ex velit,
-                  perspiciatis exercitationem porro magni totam commodi placeat
-                  nemo natus veritatis optio autem dolores ad nulla? Maiores
-                  repellat quisquam expedita, error qui aspernatur id nobis.
-                  Eaque quis non, expedita quam dicta natus totam aliquid
-                  officiis.
+                <p className="fs-5 text-secondary text-justify mt-4">
+                  {truncateText(info.desc2, 80)}
                 </p>
-                <p className="card-text">
-                  <small className="text-body-secondary">
-                    Last updated 3 mins ago
-                  </small>
-                </p>
-                <Link
-                  to={`/aktuell/${info.id}`}
-                  className="custom-link text-decoration-none"
-                >
-                  <span className="fs-5 icon-link-hover">
-                    Mehr <BsArrowRightSquareFill className="fs-5 icon" />
-                  </span>
-                </Link>
+                <div className="mt-auto d-flex justify-content-between">
+                  <Link
+                    to={`/aktuell/${info.id}`}
+                    className="custom-link text-decoration-none "
+                  >
+                    <span className="fs-5 icon-link-hover">
+                      Mehr <BsArrowRightSquareFill className="fs-5 icon" />
+                    </span>
+                  </Link>
+                  <p className="card-text mb-auto">
+                    <small className="text-secondary">
+                      Die Veranstaltung fand am{" "}
+                      <span className="text-dark">{info.date}</span> statt.
+                    </small>
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>

@@ -230,6 +230,7 @@ const hauptInfo = [
   {
     id: 1,
     type: "integration",
+    situation: "old",
     titel: "Hier kommt Schlagzeile",
     desc: "Alle Integrationsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
     desc2:
@@ -256,6 +257,7 @@ const hauptInfo = [
   {
     id: 2,
     type: "integration",
+    situation: "old",
     titel: "Hier kommt Schlagzeile",
     desc: "Alle Integrationsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
     image:
@@ -274,6 +276,7 @@ const hauptInfo = [
   {
     id: 3,
     type: "integration",
+    situation: "old",
     titel: "Hier kommt Schlagzeile",
     desc: "Alle Integrationsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
     image:
@@ -292,6 +295,7 @@ const hauptInfo = [
   {
     id: 4,
     type: "newss",
+    situation: "new",
     titel: "Titel über aktuelle Daten (1)",
     desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
     desc2:
@@ -318,6 +322,7 @@ const hauptInfo = [
   {
     id: 5,
     type: "newss",
+    situation: "new",
     titel: "Titel über aktuelle Daten (2)",
     desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
     desc2:
@@ -338,6 +343,7 @@ const hauptInfo = [
   {
     id: 6,
     type: "newss",
+    situation: "new",
     titel: "Titel über aktuelle Daten (3)",
     desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
     desc2:
@@ -358,6 +364,7 @@ const hauptInfo = [
   {
     id: 7,
     type: "bildung",
+    situation: "old",
     titel: "Hier kommt Schlagzeile",
     desc: "Alle Bildungsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
     desc2:
@@ -378,6 +385,7 @@ const hauptInfo = [
   {
     id: 8,
     type: "bildung",
+    situation: "old",
     titel: "Hier kommt Schlagzeile",
     desc: "Alle Bildungsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
     image:
@@ -396,6 +404,7 @@ const hauptInfo = [
   {
     id: 9,
     type: "bildung",
+    situation: "old",
     titel: "Hier kommt Schlagzeile",
     desc: "Alle Bildungsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
     image:
@@ -413,29 +422,42 @@ const hauptInfo = [
   },
   {
     id: 10,
+    date: "09.03.2024",
     type: "dialog",
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Dialogaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
+    situation: "new",
+    titel: "Hacivat & Karagöz",
+    desc: "Harmonie e.V. hat in diesem Jahr eine ganz besondere Veranstaltung organisiert. Um das Glück der Kinder und ihr Interesse an Kunst zu vereinbaren, fanden ein der traditionell türkischen Kultur das Puppenspiel des Hacivat und Karagöz und darüber hinaus noch ein Schattenspiel statt.",
     desc2:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae. Blanditiis, explicabo! Sit nihil dolor ipsam error totam nam magnam iure consectetur placeat. Culpa corporis laudantium cumque quis repellat! Sed delectus voluptatibus dicta, magni odio dignissimos necessitatibus pariatur rerum hic, nesciunt repellendus incidunt quibusdam sit. Quis voluptatum rem, consectetur, exercitationem suscipit, vitae fugiat quia illum incidunt praesentium voluptas sed id! Iste, doloremque nulla. Pariatur eaque commodi odio corrupti labore ipsam sit nihil, consequatur fugiat exercitationem aut eos dolorum sequi asperiores dicta ipsum officia sed voluptas, veritatis sunt. Sapiente suscipit vel, dignissimos aperiam aspernatur ab. Sunt, repudiandae maxime. Illo, nostrum.",
-    image:
-      "https://cdn.pixabay.com/photo/2018/09/04/10/16/feedback-3653368_640.jpg",
-    video: "",
+      "Harmonie e.V. hat in diesem Jahr eine ganz besondere Veranstaltung organisiert. Um das Glück der Kinder und ihr Interesse an Kunst zu vereinbaren, fanden ein der traditionell türkischen Kultur das Puppenspiel des Hacivat und Karagöz und darüber hinaus noch ein Schattenspiel statt. Wo bunte und fröhliche Charaktere zum Leben erweckt wurden, hatten die Kinder nicht nur eine unterhaltsame Zeit, sondern auch die Gelegenheit, die traditionell türkische Kunst näher kennenzulernen. Die Dialoge zwischen dem klugen Hacivat und dem scherzhaften Karagöz zauberten ein Lächeln auf die Gesichter der Kinder und brachten sie somit zum Strahlen. Diese Veranstaltung war jedoch nicht nur auf die Vorführung beschränkt. Bei unserer Veranstaltung, bei der nicht nur die türkische Tradition des Schattenspiels in Vordergrund stand umfasste auch das Puppenspiel, welches die Fantasie der Kinder anregte und somit eine unvergessliche Reise in die magische Welt der Kunst ermöglichte. Für die Teilnahme an so einem tollen und kunstvollen Veranstaltung bedanken wir uns recht herzlichst bei allen Mitwirkenden.",
+    desc3:
+      "Das traditionelle türkische Schattenspiel -Hacivat und Karagöz- wurde 2009 von der UNESCO als immaterielles Kulturerbe anerkannt und in die Liste der immateriellen Kulturerbe aufgenommen",
+    image: "/images/dialog/hacivat/hFoto-1.jpeg",
+    video: "/images/dialog/hacivat/hVideo-1.mp4",
     images: [
-      "/images/dialog/dFoto-1.jpg",
-      "/images/dialog/dFoto-2.jpg",
-      "/images/dialog/dFoto-3.jpg",
-      "/images/dialog/dFoto-4.jpg",
-      "/images/dialog/dFoto-5.jpg",
-      "/images/dialog/dFoto-6.jpg",
+      "/images/dialog/hacivat/hFoto-1.jpeg",
+      "/images/dialog/hacivat/hVideo-1.mp4",
+      "/images/dialog/hacivat/hVideo-2.mp4",
+      "/images/dialog/hacivat/hVideo-3.mp4",
+      "/images/dialog/hacivat/hVideo-4.mp4",
+      "/images/dialog/hacivat/hVideo-5.mp4",
+      "/images/dialog/hacivat/hVideo-6.mp4",
+      "/images/dialog/hacivat/hVideo-7.mp4",
+      "/images/dialog/hacivat/hFoto-2.jpeg",
+      "/images/dialog/hacivat/hFoto-3.jpeg",
+      "/images/dialog/hacivat/hFoto-4.jpeg",
     ],
     time: "...",
   },
   {
     id: 11,
+    date: "13.04.2024",
     type: "dialog",
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Dialogaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
+    situation: "new",
+    titel: "Ramadan-Programm",
+    desc: "Als Verein haben wir eine  besondere Veranstaltung  anlässlich des Ramadan-Festes organisiert, an dem Kinder mit ihren Familien teilnehmen konnten. Die Veranstaltung fand in Mönchengladbach im -Kinderspielparadies Ballorig-; ein unterhaltsamer Ort für Kinder, statt. Die Familien zeigten ein großes Interesse an unserer Veranstaltung.",
+    desc2:
+      "Als Verein haben wir eine  besondere Veranstaltung  anlässlich des Ramadan-Festes organisiert, an dem Kinder mit ihren Familien teilnehmen konnten. Die Veranstaltung fand in Mönchengladbach im -Kinderspielparadies Ballorig-; ein unterhaltsamer Ort für Kinder, statt. Die Familien zeigten ein großes Interesse an unserer Veranstaltung. Während sich die Eltern bei kulinarischen Angeboten angeregt unterhielten, genossen die Kinder das Spielangebot vor Ort. Es entstanden harmonische und unterhaltsame Atmosphäre zwischen den Anwesenden und auch die Kinder hatten die Gelegenheit neue Freundschaften zu knüpfen.Dieser schöne Tag hat dazu beigetragen, dass die Familie samt ihren Kindern eine angenehme Zeit verbringen konnten. Wir danken allen, die an unserem Fest teilgenommen haben.",
+      desc3:"",
     image:
       "https://cdn.pixabay.com/photo/2018/09/04/10/16/feedback-3653368_640.jpg",
     video: "",
@@ -452,6 +474,7 @@ const hauptInfo = [
   {
     id: 12,
     type: "dialog",
+    situation: "old",
     titel: "Hier kommt Schlagzeile",
     desc: "Alle Dialogaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
     image:
@@ -470,6 +493,7 @@ const hauptInfo = [
   {
     id: 13,
     type: "jugend",
+    situation: "old",
     titel: "Hier kommt Schlagzeile",
     desc: "Alle jugendliche Aktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
     desc2:
@@ -490,6 +514,7 @@ const hauptInfo = [
   {
     id: 14,
     type: "jugend",
+    situation: "old",
     titel: "Hier kommt Schlagzeile",
     desc: "Alle jugendliche Aktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
     image:
@@ -508,6 +533,7 @@ const hauptInfo = [
   {
     id: 15,
     type: "jugend",
+    situation: "old",
     titel: "Hier kommt Schlagzeile",
     desc: "Alle jugendliche Aktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
     image:
@@ -1021,8 +1047,7 @@ const projekte = [
       "Hier kommt eine lange Beschreibung des bezüglichen Projektes... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia!",
     image:
       "https://cdn.pixabay.com/photo/2018/02/02/17/14/triangle-3125882_640.jpg",
-    video:
-      "",
+    video: "",
     images: [
       "https://cdn.pixabay.com/animation/2023/08/17/08/51/08-51-41-992_512.gif",
       "https://cdn.pixabay.com/photo/2013/07/12/18/36/agenda-153555_640.png",

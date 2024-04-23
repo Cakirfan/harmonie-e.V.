@@ -16,30 +16,41 @@ const UpperSection = ({ categoryDetails, isModalOpen, setModalOpen }) => {
 
   const videoSrc = categoryDetails.video; // Video URL is stored here
   const thumbnail = categoryDetails.images[0] || "default_thumbnail.jpg"; // Default or specified image thumbnail
+  
 
   return (
     <motion.div
-      className="upper-section container-fluid my-md-5"
+      className="upper-section container-fluid my-md-4 shadow-lg rounded-2 p-3"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
       <div className="row">
-        <div className="col-12 col-md-6 text-content d-flex flex-column justify-content-center mb-3">
-          <h2>{categoryDetails.titel}</h2>
-          <p>{categoryDetails.desc2 || categoryDetails.desc}</p>
-          <small>Zuletzt aktualisiert vor {categoryDetails.time} Minuten</small>
+        <h2 className="text-center mb-4">{categoryDetails.titel}</h2>
+        <div className="col-12 col-md-7 text-content d-flex flex-column justify-content-center mb-3 h-100">
+          <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
+            {categoryDetails.desc2 || categoryDetails.desc}
+          </p>
+          <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
+            {categoryDetails.desc3 || ""}
+          </p>
+          <div>
+            <small className="text-secondary ms-2">
+              Die Veranstaltung fand am{" "}
+              <span className="text-dark">{categoryDetails.date}</span> statt.
+            </small>
+          </div>
         </div>
         <motion.div
-          className="col-12 col-md-6 video-content mb-3 position-relative"
+          className="col-12 col-md-5 video-content mb-3 position-relative"
           variants={containerVariants}
         >
           <img
             src={thumbnail}
             alt="Video Thumbnail"
+            className="w-100 h-100 border border-3 border-dark"
             onClick={() => setModalOpen(true)}
             style={{ cursor: "pointer", width: "100%", maxHeight: "400px" }}
-            height={600}
           />
           {videoSrc && (
             <FaPlayCircle
