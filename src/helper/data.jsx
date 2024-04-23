@@ -1,231 +1,3 @@
-const newss = [
-  {
-    id: 1,
-    schlagzeile: "Schlagzeile",
-    image:
-      "https://cdn.pixabay.com/photo/2018/04/04/15/34/shelf-3290109_640.jpg",
-    desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
-    time: "...",
-  },
-  {
-    id: 1,
-    schlagzeile: "Schlagzeile",
-    image:
-      "https://cdn.pixabay.com/photo/2018/04/04/15/34/shelf-3290109_640.jpg",
-    desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
-    time: "...",
-  },
-  {
-    id: 1,
-    schlagzeile: "Schlagzeile",
-    image:
-      "https://cdn.pixabay.com/photo/2018/04/04/15/34/shelf-3290109_640.jpg",
-    desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
-    time: "...",
-  },
-  {
-    id: 2,
-    schlagzeile: "Schlagzeile",
-    image:
-      "https://cdn.pixabay.com/photo/2018/04/04/15/34/shelf-3290109_640.jpg",
-    desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
-    time: "...",
-  },
-  {
-    id: 3,
-    schlagzeile: "Schlagzeile",
-    image:
-      "https://cdn.pixabay.com/photo/2018/04/04/15/34/shelf-3290109_640.jpg",
-    desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
-    time: "...",
-  },
-  {
-    id: 4,
-    schlagzeile: "Schlagzeile",
-    image:
-      "https://cdn.pixabay.com/photo/2018/04/04/15/34/shelf-3290109_640.jpg",
-    desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
-    time: "...",
-  },
-  {
-    id: 5,
-    schlagzeile: "Schlagzeile",
-    image:
-      "https://cdn.pixabay.com/photo/2018/04/04/15/34/shelf-3290109_640.jpg",
-    desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
-    time: "...",
-  },
-  {
-    id: 6,
-    schlagzeile: "Schlagzeile",
-    image:
-      "https://cdn.pixabay.com/photo/2018/04/04/15/34/shelf-3290109_640.jpg",
-    desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
-    time: "...",
-  },
-  {
-    id: 7,
-    schlagzeile: "Schlagzeile",
-    image:
-      "https://cdn.pixabay.com/photo/2018/04/04/15/34/shelf-3290109_640.jpg",
-    desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
-    time: "...",
-  },
-];
-
-const kulturData = [
-  {
-    id: 1,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Integrationsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2014/12/12/17/36/hands-565661_640.jpg",
-    time: "...",
-  },
-  {
-    id: 2,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Integrationsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2014/12/12/17/36/hands-565661_640.jpg",
-    time: "...",
-  },
-  {
-    id: 3,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Integrationsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2014/12/12/17/36/hands-565661_640.jpg",
-    time: "...",
-  },
-  {
-    id: 4,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Integrationsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2014/12/12/17/36/hands-565661_640.jpg",
-    time: "...",
-  },
-  {
-    id: 5,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Integrationsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2014/12/12/17/36/hands-565661_640.jpg",
-    time: "...",
-  },
-  {
-    id: 6,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Integrationsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2014/12/12/17/36/hands-565661_640.jpg",
-    time: "...",
-  },
-];
-
-const bildungData = [
-  {
-    id: 1,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Bildungsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2024/02/12/20/05/ai-generated-8569498_640.png",
-    time: "...",
-  },
-  {
-    id: 2,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Bildungsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2024/02/12/20/05/ai-generated-8569498_640.png",
-    time: "...",
-  },
-  {
-    id: 3,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Bildungsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2024/02/12/20/05/ai-generated-8569498_640.png",
-    time: "...",
-  },
-  {
-    id: 4,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Bildungsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2024/02/12/20/05/ai-generated-8569498_640.png",
-    time: "...",
-  },
-  {
-    id: 5,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Bildungsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2024/02/12/20/05/ai-generated-8569498_640.png",
-    time: "...",
-  },
-  {
-    id: 6,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Bildungsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2024/02/12/20/05/ai-generated-8569498_640.png",
-    time: "...",
-  },
-];
-
-const dialogData = [
-  {
-    id: 1,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Dialogaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2018/09/04/10/16/feedback-3653368_640.jpg",
-    time: "...",
-  },
-  {
-    id: 2,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Dialogaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2018/09/04/10/16/feedback-3653368_640.jpg",
-    time: "...",
-  },
-  {
-    id: 3,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Dialogaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2018/09/04/10/16/feedback-3653368_640.jpg",
-    time: "...",
-  },
-  {
-    id: 4,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Dialogaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2018/09/04/10/16/feedback-3653368_640.jpg",
-    time: "...",
-  },
-  {
-    id: 5,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Dialogaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2018/09/04/10/16/feedback-3653368_640.jpg",
-    time: "...",
-  },
-  {
-    id: 6,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle Dialogaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2018/09/04/10/16/feedback-3653368_640.jpg",
-    time: "...",
-  },
-];
-
 const hauptInfo = [
   {
     id: 1,
@@ -234,7 +6,7 @@ const hauptInfo = [
     titel: "Hier kommt Schlagzeile",
     desc: "Alle Integrationsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
     desc2:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae. Blanditiis, explicabo! Sit nihil dolor ipsam error totam nam magnam iure consectetur placeat. Culpa corporis laudantium cumque quis repellat! Sed delectus voluptatibus dicta, magni odio dignissimos necessitatibus pariatur rerum hic, nesciunt repellendus incidunt quibusdam sit. Quis voluptatum rem, consectetur, exercitationem suscipit, vitae fugiat quia illum incidunt praesentium voluptas sed id! Iste, doloremque nulla. Pariatur eaque commodi odio corrupti labore ipsam sit nihil, consequatur fugiat exercitationem aut eos dolorum sequi asperiores dicta ipsum officia sed voluptas, veritatis sunt. Sapiente suscipit vel, dignissimos aperiam aspernatur ab. Sunt, repudiandae maxime. Illo, nostrum.",
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae.",
     image:
       "https://cdn.pixabay.com/photo/2014/12/12/17/36/hands-565661_640.jpg",
     video: "/images/hacivat/hacivatVideo.mp4",
@@ -299,7 +71,7 @@ const hauptInfo = [
     titel: "Titel über aktuelle Daten (1)",
     desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
     desc2:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae. Blanditiis, explicabo! Sit nihil dolor ipsam error totam nam magnam iure consectetur placeat. Culpa corporis laudantium cumque quis repellat! Sed delectus voluptatibus dicta, magni odio dignissimos necessitatibus pariatur rerum hic, nesciunt repellendus incidunt quibusdam sit. Quis voluptatum rem, consectetur, exercitationem suscipit, vitae fugiat quia illum incidunt praesentium voluptas sed id! Iste, doloremque nulla. Pariatur eaque commodi odio corrupti labore ipsam sit nihil, consequatur fugiat exercitationem aut eos dolorum sequi asperiores dicta ipsum officia sed voluptas, veritatis sunt. Sapiente suscipit vel, dignissimos aperiam aspernatur ab. Sunt, repudiandae maxime. Illo, nostrum.",
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae.",
     image:
       "https://cdn.pixabay.com/photo/2023/10/25/19/25/blue-8341156_640.jpg",
     video: "",
@@ -326,7 +98,7 @@ const hauptInfo = [
     titel: "Titel über aktuelle Daten (2)",
     desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
     desc2:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae. Blanditiis, explicabo! Sit nihil dolor ipsam error totam nam magnam iure consectetur placeat. Culpa corporis laudantium cumque quis repellat! Sed delectus voluptatibus dicta, magni odio dignissimos necessitatibus pariatur rerum hic, nesciunt repellendus incidunt quibusdam sit. Quis voluptatum rem, consectetur, exercitationem suscipit, vitae fugiat quia illum incidunt praesentium voluptas sed id! Iste, doloremque nulla. Pariatur eaque commodi odio corrupti labore ipsam sit nihil, consequatur fugiat exercitationem aut eos dolorum sequi asperiores dicta ipsum officia sed voluptas, veritatis sunt. Sapiente suscipit vel, dignissimos aperiam aspernatur ab. Sunt, repudiandae maxime. Illo, nostrum.",
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae.",
     image:
       "https://cdn.pixabay.com/animation/2023/03/28/02/15/02-15-52-868_512.gif",
     video: "",
@@ -343,11 +115,11 @@ const hauptInfo = [
   {
     id: 6,
     type: "newss",
-    situation: "new",
+    situation: "old",
     titel: "Titel über aktuelle Daten (3)",
     desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
     desc2:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae. Blanditiis, explicabo! Sit nihil dolor ipsam error totam nam magnam iure consectetur placeat. Culpa corporis laudantium cumque quis repellat! Sed delectus voluptatibus dicta, magni odio dignissimos necessitatibus pariatur rerum hic, nesciunt repellendus incidunt quibusdam sit. Quis voluptatum rem, consectetur, exercitationem suscipit, vitae fugiat quia illum incidunt praesentium voluptas sed id! Iste, doloremque nulla. Pariatur eaque commodi odio corrupti labore ipsam sit nihil, consequatur fugiat exercitationem aut eos dolorum sequi asperiores dicta ipsum officia sed voluptas, veritatis sunt. Sapiente suscipit vel, dignissimos aperiam aspernatur ab. Sunt, repudiandae maxime. Illo, nostrum.",
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae.",
     image:
       "https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-41-513_512.gif",
     video: "",
@@ -368,7 +140,7 @@ const hauptInfo = [
     titel: "Hier kommt Schlagzeile",
     desc: "Alle Bildungsaktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
     desc2:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae. Blanditiis, explicabo! Sit nihil dolor ipsam error totam nam magnam iure consectetur placeat. Culpa corporis laudantium cumque quis repellat! Sed delectus voluptatibus dicta, magni odio dignissimos necessitatibus pariatur rerum hic, nesciunt repellendus incidunt quibusdam sit. Quis voluptatum rem, consectetur, exercitationem suscipit, vitae fugiat quia illum incidunt praesentium voluptas sed id! Iste, doloremque nulla. Pariatur eaque commodi odio corrupti labore ipsam sit nihil, consequatur fugiat exercitationem aut eos dolorum sequi asperiores dicta ipsum officia sed voluptas, veritatis sunt. Sapiente suscipit vel, dignissimos aperiam aspernatur ab. Sunt, repudiandae maxime. Illo, nostrum.",
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quo vero voluptatum! Exercitationem labore expedita, dignissimos, veniam provident perspiciatis accusamus possimus mollitia ab libero repellendus explicabo natus amet ea aspernatur perferendis maxime molestias iusto blanditiis praesentium placeat. Harum suscipit placeat, alias laboriosam ratione odio doloribus numquam eaque modi similique odit sit minus ipsum dolores beatae doloremque recusandae eum. Cupiditate suscipit odit fugiat ab aliquam reprehenderit tempora laboriosam repellendus amet quis, nisi, sunt temporibus veniam culpa provident et. Expedita sunt perferendis minus excepturi, maiores suscipit velit temporibus rem optio at consequuntur, dignissimos nemo dicta culpa a veritatis facilis inventore magnam eum officia! Consectetur quaerat veniam veritatis expedita fuga perspiciatis consequatur quod repellendus eligendi at dolore nobis, nihil illum odit, tempora reiciendis exercitationem quis! Corrupti expedita quasi ipsum consequatur iure totam sit obcaecati voluptate ratione neque, illum optio nobis aliquam laudantium debitis modi illo praesentium quam nam. A ut voluptates ipsam praesentium veritatis suscipit nisi velit ratione accusantium! Quisquam quas ipsam illo recusandae.",
     image:
       "https://cdn.pixabay.com/photo/2024/02/12/20/05/ai-generated-8569498_640.png",
     video: "",
@@ -457,9 +229,9 @@ const hauptInfo = [
     desc: "Als Verein haben wir eine  besondere Veranstaltung  anlässlich des Ramadan-Festes organisiert, an dem Kinder mit ihren Familien teilnehmen konnten. Die Veranstaltung fand in Mönchengladbach im -Kinderspielparadies Ballorig-; ein unterhaltsamer Ort für Kinder, statt. Die Familien zeigten ein großes Interesse an unserer Veranstaltung.",
     desc2:
       "Als Verein haben wir eine  besondere Veranstaltung  anlässlich des Ramadan-Festes organisiert, an dem Kinder mit ihren Familien teilnehmen konnten. Die Veranstaltung fand in Mönchengladbach im -Kinderspielparadies Ballorig-; ein unterhaltsamer Ort für Kinder, statt. Die Familien zeigten ein großes Interesse an unserer Veranstaltung. Während sich die Eltern bei kulinarischen Angeboten angeregt unterhielten, genossen die Kinder das Spielangebot vor Ort. Es entstanden harmonische und unterhaltsame Atmosphäre zwischen den Anwesenden und auch die Kinder hatten die Gelegenheit neue Freundschaften zu knüpfen.Dieser schöne Tag hat dazu beigetragen, dass die Familie samt ihren Kindern eine angenehme Zeit verbringen konnten. Wir danken allen, die an unserem Fest teilgenommen haben.",
-      desc3:"",
+    desc3: "",
     image:
-      "https://cdn.pixabay.com/photo/2018/09/04/10/16/feedback-3653368_640.jpg",
+      "https://cdn.pixabay.com/animation/2022/11/13/07/16/07-16-41-513_512.gif",
     video: "",
     images: [
       "/images/dialog/dFoto-7.jpg",
@@ -547,57 +319,6 @@ const hauptInfo = [
       "/images/jugend/jFoto-11.jpg",
       "/images/jugend/jFoto-12.jpg",
     ],
-    time: "...",
-  },
-];
-
-const jugendData = [
-  {
-    id: 1,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle jugendliche Aktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2023/11/08/14/03/ai-generated-8374826_640.jpg",
-    time: "...",
-  },
-  {
-    id: 2,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle jugendliche Aktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2023/11/08/14/03/ai-generated-8374826_640.jpg",
-    time: "...",
-  },
-  {
-    id: 3,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle jugendliche Aktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2023/11/08/14/03/ai-generated-8374826_640.jpg",
-    time: "...",
-  },
-  {
-    id: 4,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle jugendliche Aktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2023/11/08/14/03/ai-generated-8374826_640.jpg",
-    time: "...",
-  },
-  {
-    id: 5,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle jugendliche Aktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2023/11/08/14/03/ai-generated-8374826_640.jpg",
-    time: "...",
-  },
-  {
-    id: 6,
-    titel: "Hier kommt Schlagzeile",
-    desc: "Alle jugendliche Aktivitäten des Vereins können in diesem Bereich umfassend präsentiert werden. Unterstützt durch aussagekräftige Videos oder Fotos wird ein lebendiges Bild unserer vielfältigen Veranstaltungen gezeichnet.",
-    image:
-      "https://cdn.pixabay.com/photo/2023/11/08/14/03/ai-generated-8374826_640.jpg",
     time: "...",
   },
 ];
@@ -1171,14 +892,4 @@ const projekte = [
   },
 ];
 
-export {
-  newss,
-  kulturData,
-  bildungData,
-  dialogData,
-  jugendData,
-  hauptInfo,
-  allInfo,
-  zitaten,
-  projekte,
-};
+export { hauptInfo, allInfo, zitaten, projekte };

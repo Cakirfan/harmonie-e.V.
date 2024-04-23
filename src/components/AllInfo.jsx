@@ -21,7 +21,14 @@ const AllInfo = () => {
 
   // Her kategori için bir buton render eden fonksiyon
   const renderCategoryButtons = () => {
-    const categories = ["all", "bildung", "dialog", "jugend", "newss"];
+    const categories = [
+      "all",
+      "bildung",
+      "dialog",
+      "integration",
+      "jugend",
+      "newss",
+    ];
     return categories.map((category) => (
       <button
         key={category}
@@ -45,8 +52,8 @@ const AllInfo = () => {
           className="custom-link text-decoration-none"
         >
           <div className="card custom-card overflow-hidden">
-            <img src={info.image} className="card-img-top" alt="..." />
-            <div className="card-body">
+            <img src={info.image} className="card-img-top" alt="..." height={250}/>
+            <div className="card-body" style={{height:"13rem"}}>
               <h5 className="card-title text-center fw-semibold">
                 {info.title}
               </h5>
