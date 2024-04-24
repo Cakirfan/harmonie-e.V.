@@ -7,19 +7,24 @@ const AllInfo = () => {
   const [filteredInfo, setFilteredInfo] = useState([]);
 
   useEffect(() => {
-    // Filtrelenmiş bilgileri güncellerken sadece gerekli durumlarda yapılacak.
     const filterInfo = () => {
       if (selectedCategory === "all") {
+        // Tüm kategorilerde 'all' seçildiğinde
         return hauptInfo;
+      } else if (selectedCategory === "newss") {
+        // Yalnızca 'newss' kategorisi için 'situation' 'new' olanları filtrele
+        return hauptInfo.filter(
+          (info) => info.situation === "new"
+        );
       } else {
+        // Diğer kategoriler için sadece 'type' üzerinden filtrele
         return hauptInfo.filter((info) => info.type === selectedCategory);
       }
     };
 
     setFilteredInfo(filterInfo());
-  }, [selectedCategory]);
+  }, [selectedCategory, hauptInfo]); // hauptInfo ve selectedCategory değiştiğinde tetiklenir
 
-  // Her kategori için bir buton render eden fonksiyon
   const renderCategoryButtons = () => {
     const categories = [
       "all",
