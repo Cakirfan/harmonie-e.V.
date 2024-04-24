@@ -226,7 +226,7 @@ const hauptInfo = [
     date: "13.04.2024",
     type: "dialog",
     situation: "new",
-    titel: "Ramadan-Programm",
+    titel: "Ramadan-Event",
     desc: "Als Verein haben wir eine  besondere Veranstaltung  anlässlich des Ramadan-Festes organisiert, an dem Kinder mit ihren Familien teilnehmen konnten. Die Veranstaltung fand in Mönchengladbach im -Kinderspielparadies Ballorig-; ein unterhaltsamer Ort für Kinder, statt. Die Familien zeigten ein großes Interesse an unserer Veranstaltung.",
     desc2:
       "Als Verein haben wir eine  besondere Veranstaltung  anlässlich des Ramadan-Festes organisiert, an dem Kinder mit ihren Familien teilnehmen konnten. Die Veranstaltung fand in Mönchengladbach im -Kinderspielparadies Ballorig-; ein unterhaltsamer Ort für Kinder, statt. Die Familien zeigten ein großes Interesse an unserer Veranstaltung. Während sich die Eltern bei kulinarischen Angeboten angeregt unterhielten, genossen die Kinder das Spielangebot vor Ort. Es entstanden harmonische und unterhaltsame Atmosphäre zwischen den Anwesenden und auch die Kinder hatten die Gelegenheit neue Freundschaften zu knüpfen.Dieser schöne Tag hat dazu beigetragen, dass die Familie samt ihren Kindern eine angenehme Zeit verbringen konnten. Wir danken allen, die an unserem Fest teilgenommen haben.",
