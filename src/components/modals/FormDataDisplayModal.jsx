@@ -5,7 +5,7 @@ import Table from "react-bootstrap/Table";
 import { FaCheck, FaPrint } from "react-icons/fa";
 import Logo from "../../assets/img/logo-harmonie.jpeg";
 
-const FormDataDisplayModal = ({ show, handleClose, data, handleSubmit }) => {
+const FormDataDisplayModal = ({ show, handleClose, data }) => {
   const printRef = useRef();
 
   const handlePrint = () => {
@@ -243,14 +243,14 @@ const FormDataDisplayModal = ({ show, handleClose, data, handleSubmit }) => {
         <Button variant="danger" onClick={handleClose}>
           Schließen
         </Button>
-        <Button
+        {/* <Button
           type="submit"
           variant="success"
           onClick={handleSubmit}
           form="kontaktForm"
         >
           Senden
-        </Button>
+        </Button> */}
       </Modal.Footer>
     </Modal>
   );
