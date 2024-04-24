@@ -194,7 +194,12 @@ const Footer = () => {
               </span>
               <h1 className="text-white">KONTAKT</h1>
               <span className="fs-5">Tel: +49 15566 051266</span>
-              <span className="fs-5">EMail: info@harmonieneuss.de</span>
+              <span className="fs-5">
+                EMail:{" "}
+                <a href="mailto:info@harmonieneuss.de" className="text-warning">
+                  info@harmonieneuss.de
+                </a>
+              </span>
             </motion.div>
             <motion.div
               className="d-flex flex-column justify-content-center align-content-center text-center"
