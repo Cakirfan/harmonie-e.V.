@@ -65,7 +65,9 @@ const Mitmachen = () => {
           >
             Möchtest du uns unterstützen, hast aber wenig Zeit, dich persönlich
             einzubringen? Bitte kontaktiere uns per EMail unter{" "}
-            <span className="text-danger">info@harmonieneuss.de</span>
+            <a href="mailto:info@harmonieneuss.de" className="text-danger">
+              info@harmonieneuss.de
+            </a>
           </motion.p>
         </div>
       </div>
