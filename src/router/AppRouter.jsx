@@ -23,10 +23,12 @@ import MigrationsDetail from "../pages/details/MigrationsDetail";
 import AllInfoDetails from "../pages/details/AllInfoDetails";
 import ProjektDetail from "../pages/details/ProjektDetail";
 import AktuellDetail from "../pages/details/AktuellDetail";
+import ScrollToTop from "../components/ScrollToTop";
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
       <Navbar />
       {/* <div className="mb-md-4"></div> */}
       <ScrollBtn />

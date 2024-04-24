@@ -1,8 +1,27 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Datenschutzerklärung = () => {
+
+    const containerVariants = {
+      hidden: { opacity: 0, x: -100 },
+      visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+          when: "beforeChildren",
+          staggerChildren: 0.7,
+        },
+      },
+    };
+
   return (
-    <section className="container mt-5 shadow-lg p-5">
+    <motion.section
+      className="container mt-5 shadow-lg p-5"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <h1>Datenschutzerklärung</h1>
       <hr className="border-3 shadow border-danger my-4" />
 
@@ -934,7 +953,7 @@ const Datenschutzerklärung = () => {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

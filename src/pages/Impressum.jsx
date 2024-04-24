@@ -1,8 +1,28 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Impressum = () => {
+
+   const containerVariants = {
+     hidden: { opacity: 0, x: -100 },
+     visible: {
+       opacity: 1,
+       x: 0,
+       transition: {
+         when: "beforeChildren",
+         staggerChildren: 0.7,
+       },
+     },
+   };
+
+
   return (
-    <section className="container mt-5 shadow-lg p-5">
+    <motion.section
+      className="container mt-5 shadow-lg p-5"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="mb-4">
         <h3 className="mb-3">Angaben gemäß § 5 TMG</h3>
         <div className="lh-sm mb-5">
@@ -121,7 +141,7 @@ const Impressum = () => {
           Alle Texte sind urheberrechtlich geschützt.
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
