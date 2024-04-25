@@ -7,11 +7,11 @@ import DatenSchutzModal from "./DatenSchutzModal";
 import FormDataDisplayModal from "./FormDataDisplayModal"; // New component to display the form data
 import { Col, Row } from "react-bootstrap";
 
-function KontaktModal({ show, handleClose }) {
+const KontaktModal = ({ show, handleClose }) => {
   const [formData, setFormData] = useState({
     geschlecht: "",
-    name: "",
     vorname: "",
+    nachname: "",
     strasse: "",
     wohnort: "",
     tel: "",
@@ -283,6 +283,6 @@ function KontaktModal({ show, handleClose }) {
       />
     </>
   );
-}
+};
 
 export default KontaktModal;
