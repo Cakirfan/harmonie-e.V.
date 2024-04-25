@@ -13,9 +13,7 @@ const AllInfo = () => {
         return hauptInfo;
       } else if (selectedCategory === "newss") {
         // Yalnızca 'newss' kategorisi için 'situation' 'new' olanları filtrele
-        return hauptInfo.filter(
-          (info) => info.situation === "new"
-        );
+        return hauptInfo.filter((info) => info.situation === "new");
       } else {
         // Diğer kategoriler için sadece 'type' üzerinden filtrele
         return hauptInfo.filter((info) => info.type === selectedCategory);
@@ -51,14 +49,19 @@ const AllInfo = () => {
   // Info kartlarını render eden fonksiyon
   const renderInfoCards = () => {
     return filteredInfo.map((info, index) => (
-      <div className="col" key={index}>
+      <div className="col mx-auto" key={index} style={{ minWidth: "24rem" }}>
         <Link
           to={`/detail/${info.id}`}
           className="custom-link text-decoration-none"
         >
           <div className="card custom-card overflow-hidden">
-            <img src={info.image} className="card-img-top" alt="..." height={250}/>
-            <div className="card-body" style={{height:"13rem"}}>
+            <img
+              src={info.image}
+              className="card-img-top"
+              alt="..."
+              height={250}
+            />
+            <div className="card-body" style={{ height: "13rem" }}>
               <h5 className="card-title text-center fw-semibold">
                 {info.title}
               </h5>
@@ -84,7 +87,7 @@ const AllInfo = () => {
         <hr className="border-3 shadow border-danger my-5" />
       </div>
       <div className="col col-md-9 col-lg-8">
-        <div className="row row-cols-1 row-cols-md-3 g-5">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-5">
           {renderInfoCards()}
         </div>
       </div>

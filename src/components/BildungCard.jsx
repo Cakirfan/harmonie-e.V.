@@ -14,7 +14,11 @@ const BildungCard = () => {
   return (
     <div className="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-5">
       {bildungData.map((item) => (
-        <div className="col" key={item.id}>
+        <div
+          className="col mx-auto"
+          key={item.id}
+          style={{ minWidth: "24rem" }}
+        >
           <Link
             to={`/bildung/${item.id}`}
             className="custom-link text-decoration-none"
@@ -23,8 +27,13 @@ const BildungCard = () => {
               className="card custom-card overflow-hidden pointer-event"
               style={{ minWidth: "18rem" }}
             >
-              <img src={item.image} className="card-img-top" alt="..." />
-              <div className="card-body">
+              <img
+                src={item.image}
+                className="card-img-top"
+                alt="..."
+                height={250}
+              />
+              <div className="card-body" style={{ height: "13rem" }}>
                 <h5 className="card-title text-center fw-semibold">
                   {item.titel}
                 </h5>
