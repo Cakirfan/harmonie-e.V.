@@ -68,10 +68,20 @@ const FotoSwiper = ({ categoryDetails = [] }) => {
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
-        slidesPerView={4}
+        slidesPerView={2}
         navigation
         pagination={{ clickable: true }}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
+        breakpoints={{
+          // 576px'ten itibaren küçük ekranlar için
+          576: {
+            slidesPerView: 2,
+          },
+          // 768px'ten itibaren orta ekranlar için
+          768: {
+            slidesPerView: 4,
+          },
+        }}
         className="mt-3"
         style={{
           cursor: "pointer",
