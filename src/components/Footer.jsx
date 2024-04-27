@@ -4,21 +4,20 @@ import {
   FaInfo,
   FaLocationArrow,
   FaPhone,
-  FaEnvelopeOpenText,
-  FaFacebookF,
+  FaFacebook,
   FaInstagram,
-  FaLinkedin,
+  FaTiktok,
   FaTwitter,
   FaHandPointRight,
   FaHandPointDown,
+  FaWhatsapp,
 } from "react-icons/fa";
 import logo from "../assets/img/logo-harmonie.jpeg";
 import { motion } from "framer-motion";
-import KontaktModal from "./modals/KontaktModal";
+import { Tooltip } from "bootstrap";
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [show, setShow] = useState(false);
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
@@ -33,25 +32,51 @@ const Footer = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  useEffect(() => {
+    // Bootstrap tooltip'leri başlat
+    const tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new Tooltip(tooltipTriggerEl);
+    });
+  }, []);
 
   const sozialIcons = [
     {
-      href: "/",
-      icon: <FaFacebookF />,
+      name: "whatsapp",
+      href: "https://wa.me/4915566051266",
+      icon: <FaWhatsapp />,
+      title: "WhatsApp",
+      className: "text-success",
     },
     {
-      href: "/",
-      icon: <FaInstagram />,
+      name: "facebook",
+      href: "https://www.facebook.com/profile.php?id=61558626041473&locale=de_DE",
+      icon: <FaFacebook />,
+      title: "Facebook",
+      className: "text-info",
     },
     {
-      href: "/",
+      name: "twitter",
+      href: "https://twitter.com/harmonieneuss",
       icon: <FaTwitter />,
+      title: "Twitter",
+      className: "text-primary",
     },
     {
-      href: "/",
-      icon: <FaLinkedin />,
+      name: "instagram",
+      href: "https://www.instagram.com",
+      icon: <FaInstagram />,
+      title: "Instagram",
+      className: "text-warning",
+    },
+    {
+      name: "Tiktok",
+      href: "https://www.tiktok.com/@harmonieneuss?lang=de-DE",
+      icon: <FaTiktok />,
+      title: "Tiktok",
+      className: "text-success",
     },
   ];
 
@@ -121,8 +146,8 @@ const Footer = () => {
       <section className="bg-warning" style={{ marginTop: "5rem" }}>
         <div className="container">
           <div className="row mx-auto py-1">
-            <div className="col-12 col-md-5 d-flex text-dark fs-2 mb-md-0">
-              Kontaktieren Sie uns per{" "}
+            <div className="col-12 col-md-6 d-flex text-dark fs-2 mb-md-0">
+              <span>Kontaktieren Sie uns per </span>
               <motion.div
                 className="fs-1 ms-3"
                 style={{ height: "2rem" }}
@@ -136,29 +161,28 @@ const Footer = () => {
                 )}
               </motion.div>
             </div>
-            <div className="col-12 col-md-7 d-flex justify-content-end">
-              <div className="py-2">
+            <div className="col-12 col-md-6 d-flex justify-content-end my-auto">
+              
                 {sozialIcons.map((icon, i) => (
-                  <Link key={i} to={icon.href}>
+                  <a
+                    key={i}
+                    href={icon.href}
+                    target="_blank"
+                    className={icon.className}
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title={icon.title}
+                    rel="noreferrer"
+                  >
                     <button
                       type="button"
-                      className="btn btn-sm btn-outline-success mx-1 mx-md-2"
+                      className="btn btn-sm btn-outline-danger mx-1 mx-md-2"
                     >
                       {icon.icon}
                     </button>
-                  </Link>
+                  </a>
                 ))}
-              </div>
-              <div className="fs-4 text-center ms-md-5 mt-1">
-                <button
-                  type="button"
-                  className="btn btn-sm btn-success rounded-3 border-0 px-3"
-                  onClick={handleShow}
-                >
-                  <FaEnvelopeOpenText className="fs-5 mb-1 me-2" />
-                  <span className="py-2 fs-5">Mitgliedsformular</span>
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -231,7 +255,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <KontaktModal show={show} handleClose={handleClose} />
     </>
   );
 };

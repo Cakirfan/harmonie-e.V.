@@ -107,7 +107,7 @@ const ContactBar = () => {
             </a>
           </div>
         </motion.div>
-        <motion.div className="d-flex gap-3 ms-5 fs-6" variants={itemVariants}>
+        <motion.div className="d-flex gap-2 ms-5 fs-6" variants={itemVariants}>
           {socialMedia.map((item, index) => (
             <a
               key={index}
@@ -119,7 +119,12 @@ const ContactBar = () => {
               title={item.title}
               rel="noreferrer"
             >
-              {item.icon}
+              <button
+                type="button"
+                className="btn btn-sm btn-outline-danger"
+              >
+                {item.icon}
+              </button>
             </a>
           ))}
         </motion.div>
