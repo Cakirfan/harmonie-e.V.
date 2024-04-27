@@ -65,7 +65,7 @@ const Impressum = () => {
           urheberrechtlich geschützt.
         </p>
         <p className="mb-2 text-secondary mb-4">
-          Die Bilderrechte liegen bei Ebru e.V..
+          Die Bilderrechte liegen bei Harmonie e.V..
         </p>
         <p className="mb-2 text-secondary">
           Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos)
