@@ -20,13 +20,13 @@ const UpperSection = ({ categoryDetails, isModalOpen, setModalOpen }) => {
 
   return (
     <motion.div
-      className="upper-section container-fluid my-md-4 shadow-lg rounded-2 p-3"
+      className="upper-section container-fluid my-md-2 shadow-lg rounded-2 px-3 py-5"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
       <div className="row">
-        <h2 className="text-center mb-4">{categoryDetails.titel}</h2>
+        <h2 className="text-center mb-4 mb-md-5">{categoryDetails.titel}</h2>
         <div className="col-12 col-md-7 text-content d-flex flex-column justify-content-center mb-3 h-100">
           <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
             {categoryDetails.desc2 || categoryDetails.desc}
