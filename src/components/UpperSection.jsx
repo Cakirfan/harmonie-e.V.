@@ -27,87 +27,92 @@ const UpperSection = ({ categoryDetails, isModalOpen, setModalOpen }) => {
     >
       <div className="row">
         <h2 className="text-center mb-4 mb-md-5">{categoryDetails.titel}</h2>
-        <div className="col-12 col-md-7 text-content d-flex flex-column justify-content-center mb-3 h-100">
-          <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
-            {categoryDetails.desc2 || categoryDetails.desc}
-          </p>
-          <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
-            {categoryDetails.desc3 || ""}
-          </p>
-          <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
-            {categoryDetails.desc4 || ""}
-          </p>
-          <div>
-            <small className="text-secondary ms-2">
-              Die Veranstaltung fand am{" "}
-              <span className="text-dark">{categoryDetails.date || "..."}</span> statt.
-            </small>
+        <div className="row">
+          <div className="col-12 col-xl-7 text-content d-flex flex-column justify-content-center mb-3 order-1 order-xl-0">
+            <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
+              {categoryDetails.desc2 || categoryDetails.desc}
+            </p>
+            <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
+              {categoryDetails.desc3 || ""}
+            </p>
+            <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
+              {categoryDetails.desc4 || ""}
+            </p>
+            <div>
+              <small className="text-secondary ms-2">
+                Die Veranstaltung fand am{" "}
+                <span className="text-dark">
+                  {categoryDetails.date || "..."}
+                </span>{" "}
+                statt.
+              </small>
+            </div>
           </div>
-        </div>
-        <motion.div
-          className="col-12 col-md-5 video-content mb-3 position-relative"
-          variants={containerVariants}
-        >
-          <img
-            src={thumbnail}
-            alt="Video Thumbnail"
-            className="w-100 h-100 border border-3 border-dark"
-            onClick={() => setModalOpen(true)}
-            style={{ cursor: "pointer", width: "100%", maxHeight: "400px" }}
-          />
-          {videoSrc && (
-            <FaPlayCircle
-              className="play-icon"
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                color: "white",
-                fontSize: "4rem",
-                pointerEvents: "none", // Bunu ekleyerek simgenin üzerine tıklama engellenir
-              }}
-            />
-          )}
-          <Modal
-            show={isModalOpen}
-            onHide={() => setModalOpen(false)}
-            size="lg"
-            aria-labelledby="contained-modal-title-vcenter"
-            centered
+          <motion.div
+            className="col-12 col-xl-5 video-content mb-3 position-relative"
+            variants={containerVariants}
           >
-            <Modal.Header closeButton>
-              <Modal.Title id="contained-modal-title-vcenter">
-                {videoSrc ? "Video Preview" : "Foto Preview"}
-              </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              {videoSrc ? (
-                <video
-                  src={videoSrc}
-                  controls
-                  autoPlay
-                  style={{ width: "100%" }}
-                ></video>
-              ) : (
-                <img
-                  src={thumbnail}
-                  alt="Video Thumbnail"
-                  onClick={() => setModalOpen(true)}
-                  style={{
-                    cursor: "pointer",
-                    width: "100%",
-                    maxHeight: "400px",
-                  }}
-                  height={600}
-                />
-              )}
-            </Modal.Body>
-            <Modal.Footer>
-              <Button onClick={() => setModalOpen(false)}>Schließen</Button>
-            </Modal.Footer>
-          </Modal>
-        </motion.div>
+            <img
+              src={thumbnail}
+              alt="Video Thumbnail"
+              className="w-100 h-100 border border-3 border-dark"
+              onClick={() => setModalOpen(true)}
+              style={{ cursor: "pointer", width: "100%", maxHeight: "400px" }}
+            />
+            {videoSrc && (
+              <FaPlayCircle
+                className="play-icon"
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  color: "white",
+                  fontSize: "4rem",
+                  pointerEvents: "none", // Bunu ekleyerek simgenin üzerine tıklama engellenir
+                }}
+              />
+            )}
+            <Modal
+              show={isModalOpen}
+              onHide={() => setModalOpen(false)}
+              size="lg"
+              aria-labelledby="contained-modal-title-vcenter"
+              centered
+            >
+              <Modal.Header closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                  {videoSrc ? "Video Preview" : "Foto Preview"}
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                {videoSrc ? (
+                  <video
+                    src={videoSrc}
+                    controls
+                    autoPlay
+                    style={{ width: "100%" }}
+                  ></video>
+                ) : (
+                  <img
+                    src={thumbnail}
+                    alt="Video Thumbnail"
+                    onClick={() => setModalOpen(true)}
+                    style={{
+                      cursor: "pointer",
+                      width: "100%",
+                      maxHeight: "400px",
+                    }}
+                    height={600}
+                  />
+                )}
+              </Modal.Body>
+              <Modal.Footer>
+                <Button onClick={() => setModalOpen(false)}>Schließen</Button>
+              </Modal.Footer>
+            </Modal>
+          </motion.div>
+        </div>
       </div>
     </motion.div>
   );
