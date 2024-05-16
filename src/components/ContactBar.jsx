@@ -11,6 +11,7 @@ import {
 // import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Tooltip } from "bootstrap";
+import SozialeMedien from "./SozialeMedien";
 
 const ContactBar = () => {
   const socialMedia = [
@@ -90,7 +91,7 @@ const ContactBar = () => {
       animate="visible"
     >
       <div className="col col-8 d-flex justify-content-between mx-auto">
-        <motion.div className="d-flex me-5" variants={itemVariants}>
+        <motion.div className="col col-10 d-flex me-5" variants={itemVariants}>
           <div className="ms-3 d-flex gap-2 fs-6">
             <span>
               <FaPhone />
@@ -107,26 +108,8 @@ const ContactBar = () => {
             </a>
           </div>
         </motion.div>
-        <motion.div className="d-flex gap-2 ms-5 fs-6" variants={itemVariants}>
-          {socialMedia.map((item, index) => (
-            <a
-              key={index}
-              href={item.href}
-              target="_blank"
-              className={item.className}
-              data-bs-toggle="tooltip"
-              data-bs-placement="bottom"
-              title={item.title}
-              rel="noreferrer"
-            >
-              <button
-                type="button"
-                className="btn btn-sm btn-outline-danger"
-              >
-                {item.icon}
-              </button>
-            </a>
-          ))}
+        <motion.div className="col col-2" variants={itemVariants}>
+          <SozialeMedien />
         </motion.div>
       </div>
     </motion.div>

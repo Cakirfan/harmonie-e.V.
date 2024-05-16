@@ -15,6 +15,7 @@ import {
 import logo from "../assets/img/logo-harmonie.jpeg";
 import { motion } from "framer-motion";
 import { Tooltip } from "bootstrap";
+import SozialeMedien from "./SozialeMedien";
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,54 +32,6 @@ const Footer = () => {
     // Component unmount olduğunda event listener'ı temizle
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  useEffect(() => {
-    // Bootstrap tooltip'leri başlat
-    const tooltipTriggerList = [].slice.call(
-      document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    );
-    tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new Tooltip(tooltipTriggerEl);
-    });
-  }, []);
-
-  const sozialIcons = [
-    {
-      name: "whatsapp",
-      href: "https://wa.me/4915566051266",
-      icon: <FaWhatsapp />,
-      title: "WhatsApp",
-      className: "text-success",
-    },
-    {
-      name: "facebook",
-      href: "https://www.facebook.com/profile.php?id=61558626041473&locale=de_DE",
-      icon: <FaFacebook />,
-      title: "Facebook",
-      className: "text-info",
-    },
-    {
-      name: "twitter",
-      href: "https://twitter.com/harmonieneuss",
-      icon: <FaTwitter />,
-      title: "Twitter",
-      className: "text-primary",
-    },
-    {
-      name: "instagram",
-      href: "https://www.instagram.com",
-      icon: <FaInstagram />,
-      title: "Instagram",
-      className: "text-warning",
-    },
-    {
-      name: "Tiktok",
-      href: "https://www.tiktok.com/@harmonieneuss?lang=de-DE",
-      icon: <FaTiktok />,
-      title: "Tiktok",
-      className: "text-success",
-    },
-  ];
 
   // Simulate a condition, e.g., footer appears after a user event or conditionally
   useEffect(() => {
@@ -145,8 +98,8 @@ const Footer = () => {
     <>
       <section className="bg-warning" style={{ marginTop: "5rem" }}>
         <div className="container">
-          <div className="row mx-auto py-1">
-            <div className="col-12 col-md-6 d-flex text-dark fs-2 mb-md-0">
+          <div className="row row-cols-1 row-cols-md-2 mx-auto py-1">
+            <div className="col col-md-6 d-flex text-dark fs-2 mb-md-0">
               <span>Kontaktieren Sie uns per </span>
               <motion.div
                 className="fs-1 ms-3"
@@ -155,35 +108,13 @@ const Footer = () => {
                 animate="animate"
               >
                 {isMobile ? (
-                  <FaHandPointDown className="mb-3" />
+                  <FaHandPointDown className="mb-5" />
                 ) : (
-                  <FaHandPointRight className="mb-3" />
+                  <FaHandPointRight className="mb-5" />
                 )}
               </motion.div>
             </div>
-            <div className="col-12 col-md-6 d-flex justify-content-end my-auto">
-              
-                {sozialIcons.map((icon, i) => (
-                  <a
-                    key={i}
-                    href={icon.href}
-                    target="_blank"
-                    className={icon.className}
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="bottom"
-                    title={icon.title}
-                    rel="noreferrer"
-                  >
-                    <button
-                      type="button"
-                      className="btn btn-sm btn-outline-danger mx-1 mx-md-2"
-                    >
-                      {icon.icon}
-                    </button>
-                  </a>
-                ))}
-              
-            </div>
+            <SozialeMedien />
           </div>
         </div>
       </section>
