@@ -4,17 +4,11 @@ import {
   FaInfo,
   FaLocationArrow,
   FaPhone,
-  FaFacebook,
-  FaInstagram,
-  FaTiktok,
-  FaTwitter,
   FaHandPointRight,
   FaHandPointDown,
-  FaWhatsapp,
 } from "react-icons/fa";
 import logo from "../assets/img/logo-harmonie.jpeg";
 import { motion } from "framer-motion";
-import { Tooltip } from "bootstrap";
 import SozialeMedien from "./SozialeMedien";
 
 const Footer = () => {

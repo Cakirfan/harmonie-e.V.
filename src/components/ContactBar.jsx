@@ -1,57 +1,11 @@
 import React, { useEffect } from "react";
-import {
-  FaEnvelope,
-  FaFacebook,
-  FaInstagram,
-  FaPhone,
-  FaTiktok,
-  FaTwitter,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 // import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Tooltip } from "bootstrap";
 import SozialeMedien from "./SozialeMedien";
 
 const ContactBar = () => {
-  const socialMedia = [
-    {
-      name: "whatsapp",
-      href: "https://wa.me/4915566051266",
-      icon: <FaWhatsapp />,
-      title: "WhatsApp",
-      className: "text-success",
-    },
-    {
-      name: "facebook",
-      href: "https://www.facebook.com/profile.php?id=61558626041473&locale=de_DE",
-      icon: <FaFacebook />,
-      title: "Facebook",
-      className: "text-info",
-    },
-    {
-      name: "twitter",
-      href: "https://twitter.com/harmonieneuss",
-      icon: <FaTwitter />,
-      title: "Twitter",
-      className: "text-primary",
-    },
-    {
-      name: "instagram",
-      href: "https://www.instagram.com",
-      icon: <FaInstagram />,
-      title: "Instagram",
-      className: "text-warning",
-    },
-    {
-      name: "Tiktok",
-      href: "https://www.tiktok.com/@harmonieneuss?lang=de-DE",
-      icon: <FaTiktok />,
-      title: "Tiktok",
-      className: "text-success",
-    },
-  ];
-
   useEffect(() => {
     // Bootstrap tooltip'leri başlat
     const tooltipTriggerList = [].slice.call(
