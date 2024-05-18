@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { toastErrorNotify, toastSuccessNotify } from "../helper/ToastNotify";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import SozialeMedien from "../components/SozialeMedien";
 
 const Kontakt = () => {
   // Animasyon varyantları
@@ -81,8 +82,8 @@ const ContactDetails = () => (
 
 const SocialIcons = ({ socialIcons }) => {
   return (
-    <div className="rounded-2 overflow-hidden py-2 mb-3">
-      <div className="bg-dark text-white p-4 pt-3">
+    <div className="bg-dark rounded-2 overflow-hidden py-2 mb-3">
+      <div className="text-white p-4">
         <p>
           Wir freuen uns auf jegliche Art der Kontaktaufnahme! Jede/r ist auf
           eine Tasse Kaffee/Tee eingeladen. Anfragen für Veranstaltungen, Kurse
@@ -90,18 +91,8 @@ const SocialIcons = ({ socialIcons }) => {
         </p>
         <p>Wir freuen auf Sie!</p>
       </div>
-
-      <div className="bg-dark d-flex align-items-center justify-content-center gap-3 pb-4">
-        {socialIcons.map((icon, index) => (
-          <Link
-            key={index}
-            to={icon.href}
-            className="text-decoration-none text-white border rounded-circle d-inline-flex justify-content-center align-items-center"
-            style={{ width: "30px", height: "30px" }}
-          >
-            {icon.icon}
-          </Link>
-        ))}
+      <div className="d-flex justify-content-end mb-3">
+        <SozialeMedien />
       </div>
     </div>
   );
