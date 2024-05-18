@@ -83,6 +83,7 @@ body {
 /* Aktif link için border rengini değiştirin */
 .nav-link.active {
   border-bottom-color: #007bff; /* Aktif link için border rengi */
+  color: red!important;
 }
 
 /* Medium ve daha büyük boyutlarda fs-5 boyutuna geç */
