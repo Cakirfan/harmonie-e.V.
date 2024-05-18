@@ -16,7 +16,10 @@ const AktuellDetail = () => {
   }, [id]);
 
   return (
-    <div className="d-flex flex-column align-items-center my-5">
+    <div
+      className="d-flex flex-column align-items-center my-md-5"
+      style={{ marginTop: "-2rem" }}
+    >
       <div className="row">
         <div className="col col-md-8 mx-auto">
           <UpperSection
