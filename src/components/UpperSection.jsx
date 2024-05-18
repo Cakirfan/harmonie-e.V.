@@ -27,15 +27,24 @@ const UpperSection = ({ categoryDetails, isModalOpen, setModalOpen }) => {
     >
       <div className="row">
         <h2 className="text-center mb-4 mb-md-5">{categoryDetails.titel}</h2>
-        <div className="row">
+        <div className="row mx-auto">
           <div className="col-12 col-xl-7 text-content d-flex flex-column justify-content-center mb-3 order-1 order-xl-0">
-            <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
+            <p
+              className="fs-5 text-justify px-md-2"
+              style={{ textIndent: "2em" }}
+            >
               {categoryDetails.desc2 || categoryDetails.desc}
             </p>
-            <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
+            <p
+              className="fs-5 text-justify px-md-2"
+              style={{ textIndent: "2em" }}
+            >
               {categoryDetails.desc3 || ""}
             </p>
-            <p className="fs-5 text-justify px-2" style={{ textIndent: "2em" }}>
+            <p
+              className="fs-5 text-justify px-md-2"
+              style={{ textIndent: "2em" }}
+            >
               {categoryDetails.desc4 || ""}
             </p>
             <div>
