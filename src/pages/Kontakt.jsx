@@ -1,13 +1,4 @@
 import React, { useRef, useState } from "react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-} from "react-icons/fa";
-import { Link } from "react-router-dom";
-// import { collection, addDoc } from "firebase/firestore";
-// import db from "../firebase/firebase";
 import { toastErrorNotify, toastSuccessNotify } from "../helper/ToastNotify";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
