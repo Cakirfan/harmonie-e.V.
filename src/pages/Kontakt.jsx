@@ -27,13 +27,6 @@ const Kontakt = () => {
     },
   };
 
-  const socialIcons = [
-    { href: "/", icon: <FaFacebookF /> },
-    { href: "/", icon: <FaInstagram /> },
-    { href: "/", icon: <FaTwitter /> },
-    { href: "/", icon: <FaLinkedin /> },
-  ];
-
   return (
     <motion.section
       className="container-fluid mt-md-5"
@@ -45,7 +38,7 @@ const Kontakt = () => {
         <div className="col-sm-12 col-lg-6">
           <ContactInfo />
           <ContactDetails />
-          <SocialIcons socialIcons={socialIcons} />
+          <SocialIcons/>
         </div>
         <div className="col-sm-12 col-lg-6">
           <ContactForm />
@@ -91,6 +84,7 @@ const SocialIcons = ({ socialIcons }) => {
         </p>
         <p>Wir freuen auf Sie!</p>
       </div>
+      <hr className="text-white" />
       <div className="d-flex justify-content-end mb-3">
         <SozialeMedien />
       </div>
