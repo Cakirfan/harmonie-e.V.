@@ -34,7 +34,9 @@ const GoHome = () => {
   return (
     <Link
       to="/"
-      className={`goHome ${showGoHomeButton ? "active" : ""}`}
+      className={`goHome ${
+        showGoHomeButton ? "active" : ""
+      } bg-black border border-2 border-white`}
       onClick={goToHome}
     >
       <BsFillHouseCheckFill className="icon text-white" />
