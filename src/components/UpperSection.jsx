@@ -28,9 +28,9 @@ const UpperSection = ({ categoryDetails, isModalOpen, setModalOpen }) => {
       variants={containerVariants}
     >
       <div className="row">
-        <div className="d-flex justify-content-between align-items-center mb-4 mb-md-5">
+        <div className="d-flex justify-content-center align-items-center mb-4 mb-md-5">
           <h2 className="text-center">{categoryDetails.titel}</h2>
-          <Button variant="secondary" onClick={() => navigate(-1)}>
+          <Button variant="secondary position-absolute start-0 ms-5" onClick={() => navigate(-1)}>
             Zurück
           </Button>
         </div>
