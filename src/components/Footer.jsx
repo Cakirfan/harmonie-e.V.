@@ -121,7 +121,12 @@ const Footer = () => {
         <div className="container">
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5">
             <motion.div className="text-center" variants={itemVariants}>
-              <img src={logo} alt="logo" className="rounded" width={165} />
+              <img
+                src={logo}
+                alt="logo"
+                className="rounded shadow-lg"
+                width={165}
+              />
             </motion.div>
             <motion.div
               className="d-flex flex-column justify-content-center align-content-center text-center"
@@ -175,8 +180,8 @@ const Footer = () => {
       <div className="container-fluid bg-success-subtle p-2">
         <div className="container">
           <p className="text-success text-center mb-0">
-            ©<span>{new Date().getUTCFullYear()}</span> Harmonie e.V.. All
-            Rights Reserved.
+            ©<span>{new Date().getUTCFullYear()}</span> Harmonie e.V.. Alle
+            Rechte vorbehalten
           </p>
         </div>
       </div>
