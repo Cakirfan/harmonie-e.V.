@@ -23,6 +23,15 @@ const AllInfo = () => {
     setFilteredInfo(filterInfo());
   }, [selectedCategory, hauptInfo]); // hauptInfo ve selectedCategory değiştiğinde tetiklenir
 
+  // Metni belirli bir kelime sayısına göre kısaltan yardımcı fonksiyon
+  const truncateText = (text, maxWords) => {
+    const words = text.split(" ");
+    if (words.length > maxWords) {
+      return words.slice(0, maxWords).join(" ") + "...";
+    }
+    return text;
+  };
+
   const renderCategoryButtons = () => {
     const categories = [
       "all",
@@ -65,7 +74,7 @@ const AllInfo = () => {
               <h5 className="card-title text-center fw-semibold">
                 {info.title}
               </h5>
-              <p className="card-text">{info.desc}</p>
+              <p className="card-text">{truncateText(info.desc, 50)}</p>
             </div>
             <div className="card-footer">
               <small className="text-body-secondary">

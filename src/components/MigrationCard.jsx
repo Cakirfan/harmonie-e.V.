@@ -3,7 +3,6 @@ import { hauptInfo } from "../helper/data";
 import { Link } from "react-router-dom";
 
 const MigrationCard = () => {
-
   const [kulturData, setKulturData] = useState([]);
 
   useEffect(() => {
@@ -12,6 +11,15 @@ const MigrationCard = () => {
     );
     setKulturData(migrationInfos);
   }, []);
+
+  // Metni belirli bir kelime sayısına göre kısaltan yardımcı fonksiyon
+  const truncateText = (text, maxWords) => {
+    const words = text.split(" ");
+    if (words.length > maxWords) {
+      return words.slice(0, maxWords).join(" ") + "...";
+    }
+    return text;
+  };
 
   return (
     <div className="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-5">
@@ -36,7 +44,7 @@ const MigrationCard = () => {
                 <h5 className="card-title text-center fw-semibold">
                   {item.titel}
                 </h5>
-                <p className="card-text">{item.desc}</p>
+                <p className="card-text">{truncateText(item.desc, 40)}</p>
               </div>
               <div className="card-footer">
                 <small className="text-body-secondary">
