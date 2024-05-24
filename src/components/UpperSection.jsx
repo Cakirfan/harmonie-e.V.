@@ -3,8 +3,11 @@ import { motion } from "framer-motion";
 import "react-modal-video/css/modal-video.min.css";
 import { Button, Modal } from "react-bootstrap";
 import { FaPlayCircle } from "react-icons/fa"; // React Icons kullanılarak play ikonu eklendi
+import { useNavigate } from "react-router-dom";
 
 const UpperSection = ({ categoryDetails, isModalOpen, setModalOpen }) => {
+  const navigate = useNavigate();
+
   if (!categoryDetails) {
     return <div>Loading...</div>;
   }
@@ -16,7 +19,6 @@ const UpperSection = ({ categoryDetails, isModalOpen, setModalOpen }) => {
 
   const videoSrc = categoryDetails.video; // Video URL is stored here
   const thumbnail = categoryDetails.images[0] || "default_thumbnail.jpg"; // Default or specified image thumbnail
-  
 
   return (
     <motion.div
@@ -26,7 +28,12 @@ const UpperSection = ({ categoryDetails, isModalOpen, setModalOpen }) => {
       variants={containerVariants}
     >
       <div className="row">
-        <h2 className="text-center mb-4 mb-md-5">{categoryDetails.titel}</h2>
+        <div className="d-flex justify-content-between align-items-center mb-4 mb-md-5">
+          <h2 className="text-center">{categoryDetails.titel}</h2>
+          <Button variant="secondary" onClick={() => navigate(-1)}>
+            Zurück
+          </Button>
+        </div>
         <div className="row mx-auto">
           <div className="col-12 col-xl-7 text-content d-flex flex-column justify-content-center mb-3 order-1 order-xl-0">
             <p
