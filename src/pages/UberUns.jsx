@@ -122,16 +122,15 @@ const UberUns = () => {
               src={subImage}
               className="img-fluid rounded-start col-md-6"
               alt="..."
-              style={{ height: "27rem" }}
+              style={{ height: "26rem" }}
             />
-
             <div className="col-md-6 bg-success-subtle">
               <div className="card-body p-4 p-md-5">
                 <span className="bg-warning text-white py-2 px-3 fw-semibold">
                   ÜBER UNS
                 </span>
                 <h3 className="card-title text-secondary mt-3">ZIELE</h3>
-                <p className="text-start mt-3">
+                <p className="mt-3 fs-5">
                   Eines der Hauptziele bei der Verwirklichung der gemeinnützigen
                   Arbeit unseres Vereins ist die Durchführung von
                   Veranstaltungen, die den interkulturellen und interreligiösen

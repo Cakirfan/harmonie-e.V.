@@ -117,7 +117,7 @@ const Dialog = () => {
                   DIALOG & KULTUR
                 </span>
                 <h3 className="card-title text-secondary mt-3">KULTUR</h3>
-                <p className="text-start mt-3">
+                <p className="text-start mt-3 fs-6">
                   Im Harmonie e.V. Kulturhaus sind wir uns der Vielfalt und
                   Bedeutung von Kultur bewusst und bemühen uns, ein breites
                   Spektrum an Aktivitäten und Veranstaltungen anzubieten. Unser
@@ -138,7 +138,7 @@ const Dialog = () => {
                 src={subImage}
                 className="img-fluid rounded-end"
                 alt="..."
-                style={{ height: "31rem" }}
+                style={{ height: "27rem" }}
               />
             </div>
           </div>

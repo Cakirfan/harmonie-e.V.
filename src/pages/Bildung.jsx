@@ -101,7 +101,7 @@ const Bildung = () => {
                 src={subImage}
                 className="img-fluid rounded-start w-100"
                 alt="..."
-                style={{ height: "32rem" }}
+                style={{ height: "30rem" }}
               />
             </div>
             <div className="col-md-6 bg-success-subtle">
@@ -112,7 +112,7 @@ const Bildung = () => {
                 <h3 className="card-title text-secondary mt-3">
                   UMWELT UND NACHHALTIGKEIT
                 </h3>
-                <p className="text-start mt-3">
+                <p className="text-start mt-3 fs-6">
                   Im Harmonie e.V. Kulturhaus legen wir großen Wert auf Umwelt-
                   und Klimaschutz. Wir setzen uns dafür ein, die natürlichen
                   Ressourcen zu schonen und nachhaltige Lebensweisen zu fördern.
@@ -123,7 +123,7 @@ const Bildung = () => {
                   Umweltthemen auseinandersetzen und gemeinsam nach Lösungen
                   suchen.
                 </p>
-                <p className="text-start mt-3">
+                <p className="text-start mt-3 fs-6">
                   Darüber hinaus beteiligen wir uns an lokalen und regionalen
                   Initiativen, die sich für den Schutz der Umwelt und die
                   Förderung nachhaltiger Praktiken einsetzen.

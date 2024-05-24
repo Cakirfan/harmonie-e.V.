@@ -169,7 +169,7 @@ const MigrationsArbeit = () => {
                 <h3 className="card-title text-secondary mt-3">
                   INTEGRATIONSBESUCHE
                 </h3>
-                <p className="text-start mt-3">
+                <p className="text-start mt-3 fs-6">
                   In der ersten Integrationsphase der Flüchtlinge ist der
                   schnelle Kontakt zur hiesigen Gesellschaft von großer
                   Bedeutung, um Ängste abzubauen, Berührungspunkte herzustellen
@@ -179,7 +179,7 @@ const MigrationsArbeit = () => {
                   und Gemeinden zu unternehmen und unterstützen sie bei der
                   Organisation dieser Treffen.
                 </p>
-                <p className="text-start mt-3">
+                <p className="text-start mt-3 fs-6">
                   Wir freuen uns sehr, dass wir in diesem Zusammenhang eine
                   Brücke zwischen Flüchtlingen und den jeweiligen Institutionen
                   bzw. Persönlichkeiten bauen können und bedanken uns jetzt
@@ -193,7 +193,7 @@ const MigrationsArbeit = () => {
                 src={subImage}
                 className="img-fluid rounded-end w-100"
                 alt="..."
-                style={{ height: "33.5rem" }}
+                style={{ height: "30rem" }}
               />
             </div>
           </div>

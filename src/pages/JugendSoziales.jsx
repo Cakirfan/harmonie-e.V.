@@ -149,7 +149,7 @@ const JugendSoziales = () => {
                 <h3 className="card-title text-secondary mt-3">
                   JUGEND & SOZIALES IN DER PRAXIS
                 </h3>
-                <p className="text-start mt-3">
+                <p className="text- mt-3 fs-6">
                   Im Harmonie e.V. legen wir großen Wert auf Umwelt- und
                   Klimaschutz. Wir setzen uns dafür ein, die natürlichen
                   Ressourcen zu schonen und nachhaltige Lebensweisen zu fördern.
@@ -160,7 +160,7 @@ const JugendSoziales = () => {
                   Umweltthemen auseinandersetzen und gemeinsam nach Lösungen
                   suchen.
                 </p>
-                <p className="text-start mt-3">
+                <p className="mt-3 fs-6">
                   Darüber hinaus beteiligen wir uns an lokalen und regionalen
                   Initiativen, die sich für den Schutz der Umwelt und die
                   Förderung nachhaltiger Praktiken einsetzen.
@@ -173,7 +173,7 @@ const JugendSoziales = () => {
                 src={subImage}
                 className="img-fluid rounded-end w-100"
                 alt="..."
-                style={{ height: "34rem" }}
+                style={{ height: "30rem" }}
               />
             </div>
           </div>
