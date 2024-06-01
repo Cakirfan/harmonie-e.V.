@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./ScrollBtn.css";
 import { BsCapslockFill } from "react-icons/bs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
 
 const ScrollBtn = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -37,7 +39,7 @@ const ScrollBtn = () => {
       } bg-black border border-2 border-white`}
       onClick={scrollToTop}
     >
-      <BsCapslockFill className="icon text-white" />
+      <FontAwesomeIcon className="text-white fs-3" icon={faAnglesUp} />
     </div>
   );
 };
