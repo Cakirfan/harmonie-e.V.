@@ -30,7 +30,10 @@ const UpperSection = ({ categoryDetails, isModalOpen, setModalOpen }) => {
       <div className="row">
         <div className="d-flex justify-content-center align-items-center mb-4 mb-md-5">
           <h2 className="text-center">{categoryDetails.titel}</h2>
-          <Button variant="secondary position-absolute start-0 ms-5" onClick={() => navigate(-1)}>
+          <Button
+            variant="secondary position-absolute start-0 ms-1 ms-md-5 opacity-50"
+            onClick={() => navigate(-1)}
+          >
             Zurück
           </Button>
         </div>
