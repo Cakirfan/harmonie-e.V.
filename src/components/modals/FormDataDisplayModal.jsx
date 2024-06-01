@@ -93,7 +93,7 @@ const FormDataDisplayModal = ({ show, handleClose, data }) => {
         </style>
       `;
 
-       const logoHtml = `<div class="header"><img src="${Logo}" alt="Logo" class="logo"><span class="titel">Antrag auf Mitgliedschaft</span></div>`;
+      const logoHtml = `<div class="header"><img src="${Logo}" alt="Logo" class="logo"><span class="titel">Antrag auf Mitgliedschaft</span></div>`;
 
       windowPrint.document.write(`
         <html>
@@ -108,19 +108,19 @@ const FormDataDisplayModal = ({ show, handleClose, data }) => {
         </html>
       `);
 
-       windowPrint.document.close();
-       windowPrint.focus();
-       setTimeout(() => {
-         windowPrint.print();
-         windowPrint.close();
-       }, 250);
+      windowPrint.document.close();
+      windowPrint.focus();
+      setTimeout(() => {
+        windowPrint.print();
+        windowPrint.close();
+      }, 250);
     } else {
       console.error("Print content is not available.");
     }
   };
 
   return (
-    <Modal show={show} onHide={handleClose}>
+    <Modal show={show} onHide={handleClose} className="form-data-display-modal">
       <Modal.Header
         closeButton
         className="d-flex align-items-center justify-content-start"

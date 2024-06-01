@@ -67,7 +67,11 @@ const KontaktModal = ({ show, handleClose }) => {
 
   return (
     <>
-      <Modal show={show} onHide={handleClose} className="border border-warning">
+      <Modal
+        show={show}
+        onHide={handleClose}
+        className="kontakt-modal border border-warning"
+      >
         <Modal.Header closeButton className="bg-warning border border-danger">
           <Modal.Title className="text-dark fw-semibold fs-2">
             Antrag auf Mitgliedschaft

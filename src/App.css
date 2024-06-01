@@ -277,3 +277,36 @@ body {
 }
 
 /*! Mitgliedschaft END */
+
+
+/*? Modals START */
+/*! KontaktModal START */
+
+/* KontaktModal.css */
+.kontakt-modal .modal-dialog {
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .kontakt-modal .modal-dialog {
+    max-width: 50%;
+  }
+}
+
+/*! KontaktModal END */
+
+/*! FormDataDisplayModal START */
+
+/* FormDataDisplayModal.css */
+.form-data-display-modal .modal-dialog {
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .form-data-display-modal .modal-dialog {
+    max-width: 50%;
+  }
+}
+
+/*! FormDataDisplayModal END */
+/*? Modals END */
