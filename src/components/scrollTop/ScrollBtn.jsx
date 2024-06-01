@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./ScrollBtn.css";
-import { BsCapslockFill } from "react-icons/bs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
 
