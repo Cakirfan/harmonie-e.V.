@@ -83,7 +83,7 @@ const hauptInfo = [
     id: 5,
     date: "",
     type: "newss",
-    situation: "new",
+    situation: "old",
     titel: "Titel über aktuelle Daten",
     desc: "Wöchentliche oder monatliche Entwicklungen im Verein können in diesem Bereich, unterstützt durch Bilder und Kurzinformationen, ausgestellt werden...",
     desc2:
