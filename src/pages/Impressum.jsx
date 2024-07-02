@@ -31,9 +31,10 @@ const Impressum = () => {
           <p className="text-secondary">41462 Neuss</p>
         </div>
         <div className="mb-4 lh-sm mb-5">
-          <p className="text-secondary">Vereinsregister: .......</p>
+          <p className="text-secondary">Vereinsregister: VR 3165</p>
+          <p className="text-secondary">Steuernummer: 122/5789</p>
           <p className="text-secondary">
-            Registergericht: Amtsgericht Düsseldorf
+            Registergericht: Amtsgericht Neuss
           </p>
         </div>{" "}
         <div className="mb-4 lh-sm mb-5">
@@ -49,7 +50,7 @@ const Impressum = () => {
             Kontaktdaten der verantwortlichen Person bzw. Stelle:
           </p>
           <p className="mb-2 text-secondary">
-            Vertretungsberechtigt: Vorstandsvorsitzender – ..........
+            Vertretungsberechtigt: Vorstandsvorsitzender – Selcuk Akdag
           </p>
           <p className="mb-2 text-secondary">
             E-Mail-Adresse: info@harmonieneuss.de{" "}
