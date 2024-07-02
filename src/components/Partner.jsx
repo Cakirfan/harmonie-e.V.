@@ -1,33 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-
 const Partner = () => {
   const partners = [
     {
-      name: "",
-      logo: "https://cdn.pixabay.com/photo/2024/01/30/08/53/ai-generated-8541533_640.png",
-      href: "",
+      name: "Puzzle",
+      href: "/images/partner/Logo_Puzzle-Frauen.png",
     },
     {
-      name: "",
-      logo: "https://cdn.pixabay.com/photo/2017/08/24/07/40/annotation-2675672_640.png",
-      href: "",
+      name: "Ebru",
+      href: "/images/partner/ebru_logo.png",
     },
     {
-      name: "",
-      logo: "https://cdn.pixabay.com/photo/2024/01/30/08/53/ai-generated-8541531_640.png",
-      href: "",
+      name: "Lotus",
+      href: "/images/partner/lotus_logo1.png",
     },
     {
-      name: "",
-      logo: "https://cdn.pixabay.com/photo/2024/02/09/09/52/pen-8562720_1280.png",
-      href: "",
-    },
-    {
-      name: "",
-      logo: "https://cdn.pixabay.com/photo/2024/02/16/20/02/lawyer-8578265_640.png",
-      href: "",
+      name: "Mozaik",
+      href: "/images/partner/mozaik_logo.png",
     },
   ];
 
@@ -49,7 +39,7 @@ const Partner = () => {
 
   return (
     <div className="container d-flex flex-column px-4 mt-5">
-      <span className="bg-warning text-white py-2 px-3 fw-semibold mx-auto">
+      <span className="bg-warning text-white py-2 px-3 fw-semibold mx-auto fs-4 my-3">
         PARTNER
       </span>
       <motion.div
@@ -59,8 +49,8 @@ const Partner = () => {
         animate="visible"
       >
         {partners.map((partner, i) => (
-          <motion.span key={i} variants={itemVariants}>
-            <img src={partner.logo} alt={partner.name} width={150} />
+          <motion.span key={i} variants={itemVariants} className="d-flex align-items-center p-3 rounded-4 shadow-lg" style={{height: "12rem"}}>
+            <img src={partner.href} alt={partner.name} width={170} />
           </motion.span>
         ))}
       </motion.div>
